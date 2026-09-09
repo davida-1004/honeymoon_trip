@@ -259,6 +259,75 @@ a.pick:hover .pgo{color:var(--ink-2);}
 .ovtable .ovd.fr{color:var(--fr);} .ovtable .ovd.ch{color:var(--ch);} .ovtable .ovd.it{color:var(--it);}
 .ovtable .ovcity{font-weight:600; color:var(--ink);}
 @media(max-width:520px){ .ovtable th:nth-child(5),.ovtable td:nth-child(5){display:none;} }
+
+/* ============ MAP TAB (landing) ============ */
+.mapwrap{padding:6px 0 4px;}
+.svgmap{width:100%; height:auto; display:block;}
+.svgmap .blob{cursor:pointer; transition:opacity .15s;}
+.svgmap .blob:hover{opacity:.85;}
+.svgmap .blob.fr circle.core{fill:var(--fr);} .svgmap .blob.ch circle.core{fill:var(--ch);} .svgmap .blob.it circle.core{fill:var(--it);}
+.svgmap .rlabel{font-family:var(--sans); font-weight:700; fill:#fff; font-size:12px;}
+.svgmap .clabel{font-family:var(--sans); font-weight:600; fill:var(--ink-2); font-size:9.5px;}
+.svgmap .cdot{fill:#fff; stroke-width:2;}
+.svgmap .cdot.fr{stroke:var(--fr);} .svgmap .cdot.ch{stroke:var(--ch);} .svgmap .cdot.it{stroke:var(--it);}
+.svgmap .routeline{fill:none; stroke:#c3ccda; stroke-width:2.5; stroke-dasharray:1 7; stroke-linecap:round;}
+.svgmap .miniline{fill:none; stroke:var(--it); stroke-width:1.6; stroke-dasharray:1 5; stroke-linecap:round; opacity:.55;}
+.svgmap .legicon{font-size:14px;}
+.maplegend{display:flex; justify-content:center; gap:16px; margin-top:10px; font-size:11.5px; color:var(--ink-3); flex-wrap:wrap;}
+.maplegend span{display:flex; align-items:center; gap:5px;}
+.maplegend i{width:10px; height:10px; border-radius:50%; display:inline-block;}
+.mapintro{text-align:center; padding:4px 16px 10px;}
+.mapintro h2{font-family:var(--serif); font-size:22px; margin:0 0 5px;}
+.mapintro p{font-size:12.5px; color:var(--ink-3); margin:0;}
+.maptap{text-align:center; font-size:11px; color:var(--ink-3); margin-top:4px;}
+
+/* ============ ORIENTATION CARDS ============ */
+.orientgrid{display:grid; gap:8px; margin:14px 0 4px;}
+.orientcard{background:var(--card); border:1px solid var(--line); border-radius:11px; padding:11px 13px; font-size:12.8px; line-height:1.6; color:var(--ink-2);}
+.orientcard b{color:var(--ink);}
+
+/* ============ MAP EMBED (country page) ============ */
+.mapembed{border-radius:13px; overflow:hidden; border:1px solid var(--line); margin-top:11px; background:#eee;}
+.mapembed iframe{width:100%; height:220px; border:0; display:block;}
+
+/* ============ EMERGENCY BOX ============ */
+.emerg{background:#fff4f2; border:1px solid #f3cfc8; border-left:3.5px solid var(--it); border-radius:0 12px 12px 0; padding:14px 16px; margin-top:18px;}
+.emerg h4{margin:0 0 8px; font-size:13px; font-weight:700;}
+.emerg ul{margin:0; padding-left:17px; font-size:12.5px; color:var(--ink-2); line-height:1.7;}
+
+/* ============ RESERVATION / CALENDAR ============ */
+.resvbox{background:#fff8ec; border:1px solid #efe0bb; border-left:3.5px solid var(--gold,#c9a15c); border-radius:0 12px 12px 0; padding:13px 15px; margin-top:13px;}
+.resvbox h5{margin:0 0 9px; font-size:12.5px; font-weight:700; color:#7a5c1a; display:flex; align-items:center; gap:6px;}
+.resvitem{display:flex; justify-content:space-between; align-items:center; gap:8px; padding:6px 0; border-bottom:1px dashed #e9dcb8;}
+.resvitem:last-of-type{border-bottom:none;}
+.resvitem .rt{font-size:12.5px; font-weight:600; color:#5a4413;}
+.resvitem .rn{font-size:11px; color:#8a7237; margin-top:1px;}
+.icsbtn{flex:0 0 auto; font-size:11px; font-weight:700; padding:6px 10px; border-radius:7px; background:#c9a15c; color:#fff; border:none; cursor:pointer; white-space:nowrap;}
+.icsbtn:active{opacity:.8;}
+.icsbtn.all{width:100%; margin-top:10px; padding:10px; font-size:12.5px;}
+:root{--gold:#c9a15c;}
+
+/* ============ NEARBY FINDER ============ */
+.nearbtns{display:flex; gap:8px; flex-wrap:wrap;}
+.nearbtn{flex:1; min-width:90px; background:#f0f3f8; border:1px solid var(--line); border-radius:9px; padding:10px 8px; font-size:12.5px; font-weight:600; color:var(--ink-2); cursor:pointer;}
+.nearbtn:active{background:#e2e9f3;}
+
+/* ============ TOOLS TAB ============ */
+.fxrow{display:flex; align-items:center; gap:10px; margin-bottom:9px;}
+.fxrow label{flex:0 0 68px; font-size:12.5px; color:var(--ink-2); font-weight:600;}
+.fxrow input{flex:1; border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:13px; font-family:var(--mono); background:#fafbfc;}
+.fxrow span{flex:0 0 auto; font-size:12px; color:var(--ink-3);}
+.fxdivider{height:1px; background:var(--line); margin:10px 0 12px;}
+.fxresult{background:#f0f3f8; border-radius:9px; padding:12px 14px; text-align:center; font-size:14px; color:var(--ink);}
+.wxgrid{display:flex; flex-wrap:wrap; gap:8px;}
+.wxchip{text-decoration:none; font-size:12.5px; font-weight:600; padding:8px 13px; border-radius:20px; border:1.5px solid var(--line); color:var(--ink-2);}
+.wxchip.fr{border-color:var(--fr-bg); color:var(--fr);} .wxchip.ch{border-color:var(--ch-bg); color:var(--ch);} .wxchip.it{border-color:var(--it-bg); color:var(--it);}
+.packlist{display:grid; gap:6px;}
+.packitem{display:flex; align-items:center; gap:10px; padding:8px 4px; font-size:13px; color:var(--ink-2); cursor:pointer; border-bottom:1px solid #f0f2f6;}
+.packitem:last-child{border-bottom:none;}
+.packitem.done{color:var(--ink-3); text-decoration:line-through;}
+.packitem .pcb{flex:0 0 18px; height:18px; border-radius:5px; border:2px solid var(--line); display:flex; align-items:center; justify-content:center; font-size:11px; color:#fff;}
+.packitem.done .pcb{background:var(--ink); border-color:var(--ink);}
 .minitable{width:100%; border-collapse:collapse; font-size:12.5px;}
 .minitable td{padding:7px 6px; border-bottom:1px solid var(--line); vertical-align:top; color:var(--ink-2);}
 .minitable tr:last-child td{border-bottom:none;}
@@ -311,9 +380,1739 @@ a.pick:hover .pgo{color:var(--ink-2);}
 </head>
 <body>
 <div class="wrap" id="root"></div>
-<script src="days1.js"></script>
-<script src="days2.js"></script>
-<script src="guide.js"></script>
-<script src="app.js"></script>
+<script>
+const TRIP = {
+  title:"동혁 ❤ 지애",
+  sub:"2026.9.14(월) — 10.1(목) · 총 17박 18일",
+  route:"인천 → 파리(5박) → 그린델발트(5박) → 나폴리(1박) → 소렌토(2박) → 카프리(1박) → 로마(4박) → 인천",
+  flights:[
+    {label:"출국편 | 인천 → 파리", lines:["2026.9.14(월)","10:10 인천(ICN) 출발 → 18:10 파리 샤를드골(CDG) 도착","총 15시간"]},
+    {label:"구간 | 취리히 → 나폴리", lines:["2026.9.24(목) · SWISS","16:50 취리히 출발 → 18:30 나폴리 도착"]},
+    {label:"귀국편 | 로마 → 인천", lines:["2026.10.1(목) · 로마 FCO 출발","출발 3시간 전 도착 기준으로 역산"]}
+  ],
+  stays:[
+    {c:"fr", t:"파리", lines:["9/14~9/17 시타딘 생제르망","9/18 풀만 투르 에펠"]},
+    {c:"ch", t:"그린델발트", lines:["9/19 선스타 호텔","9/20~9/23 글레쳐블리크"]},
+    {c:"it", t:"이탈리아", lines:["9/24 나폴리 스타호텔스 테르미누스","9/25~9/26 소렌토 카사 루치아","9/27 카프리 웨버 앰배서더","9/28~10/1 로마 콜론나 팰리스"]}
+  ],
+  apps:[
+    "<b>지도</b> — Google Maps",
+    "<b>교통</b> — Omio · Rome2rio · SBB(스위스) · Trainline",
+    "<b>파리 지하철</b> — Bonjour RATP · IDF Mobilités",
+    "<b>스위스 날씨</b> — MeteoSwiss (Jungfraujoch 지점 추가)",
+    "<b>숙소</b> — 예약 확인서 미리 저장",
+    "<b>통신</b> — WhatsApp / 유럽 유심·eSIM",
+    "<b>번역</b> — Google Translate (오프라인 다운로드)",
+    "<b>서류</b> — 국제운전면허증 + 한국 운전면허증 원본 + 여권 (이탈리아 렌트카용)"
+  ]
+};
+
+const OVERVIEW = [
+  [1,"9/14(월)","fr","파리 (시타딘 생제르망)","파리 도착 & 체크인","공항→시내 (RER B/택시)"],
+  [2,"9/15(화)","fr","파리 (시타딘)","오르세 + 피크닉 + 몽마르뜨 + 바토무슈","바토무슈 19:30 / 20:00"],
+  [3,"9/16(수)","fr","파리 (시타딘)","몽생미셸 투어","06:30 시작, 귀가 익일 01:30 전후"],
+  [4,"9/17(목)","fr","파리 (시타딘)","르봉마르셰 + 루브르 가이드 + 오페라","13:30 루브르 · 19:30 공연"],
+  [5,"9/18(금)","fr","파리 (풀만 투르 에펠)","웨딩스냅 + 마레 + 에펠탑","시타딘 → 풀만 이동"],
+  [6,"9/19(토)","ch","그린델발트 (선스타)","파리 → 그린델발트 이동일","슈피츠 환승 3분 (16:06)"],
+  [7,"9/20(일)","ch","그린델발트 (글레쳐블리크)","융프라우요흐 + 패러글라이딩 옵션","융프라우 좌석예약 필수"],
+  [8,"9/21(월)","ch","그린델발트 (글레쳐블리크)","날씨 따라 피르스트 / 라우터브루넨","산악날씨 체크 (MeteoSwiss)"],
+  [9,"9/22(화)","ch","그린델발트 (글레쳐블리크)","외시넨 호수 + 블라우제","곤돌라 왕복 CHF 36"],
+  [10,"9/23(수)","ch","그린델발트 (글레쳐블리크)","옵션데이 (체르마트/슈피츠/베른)","이동시간 보고 선택"],
+  [11,"9/24(목)","it","나폴리 (스타호텔스 테르미누스)","그린델발트 → 취리히 → 나폴리","SWISS 16:50 → 18:30"],
+  [12,"9/25(금)","it","소렌토 (카사 루치아)","나폴리 구시가지 + 렌트카 + 소렌토","13:00~13:50 렌트카 픽업"],
+  [13,"9/26(토)","it","소렌토 (카사 루치아)","포지타노 + 푸로레 + 아말피","주차·운전 동선"],
+  [14,"9/27(일)","it","카프리 (웨버 앰배서더)","소렌토 → 카프리 페리 + 블루동굴","소렌토 주차 1박 €60~75"],
+  [15,"9/28(월)","it","로마 (콜론나 팰리스)","카프리 → 소렌토 → 로마 드라이브","17:00~17:30 렌트카 반납"],
+  [16,"9/29(화)","it","로마 (콜론나 팰리스)","바티칸 투어","13:30~18:00 전후"],
+  [17,"9/30(수)","it","로마 (콜론나 팰리스)","로마 산책 + 쇼핑 + 일몰","핀초 언덕 일몰 18:53"],
+  [18,"10/1(목)","it","로마 → 인천","귀국일","FCO 이동 (레오나르도/버스)"]
+];
+
+const DAYS = [
+/* ═══════════════ DAY 1 ═══════════════ */
+{
+  n:1, date:"9/14", dow:"월", country:"fr", city:"파리", stay:"시타딘 생제르망",
+  title:"파리 도착", headline:"🛬 15시간 비행 끝, 생제르망의 첫 밤", tags:["이동일"],
+  timeline:[
+    {period:"저녁", time:"18:10", icon:"✈️", title:"샤를드골공항(CDG) 도착", key:true,
+     sub:["입국심사 → 수하물 수령"]},
+    {period:"저녁", icon:"🚕", title:"시내 이동", desc:"RER B 또는 택시 · 자세한 건 아래 '파리 교통권' 참고"},
+    {period:"저녁", time:"20:30 전후", icon:"🏨", title:"시타딘 생제르망 체크인"},
+    {period:"저녁", icon:"🌙", title:"센강 퐁뇌프 야간 산책", desc:"컨디션에 따라 생략 가능", soft:true}
+  ],
+  meals:[{slot:"저녁식사 (선택)", picks:[
+    {n:"Brasserie des Prés", q:"Brasserie des Prés Paris", d:"숙소 도보 5분 · 어니언수프 · 뵈프 부르기뇽 · 자정까지 영업"},
+    {n:"카페 두 마고", q:"Les Deux Magots Paris", d:"☕ 생제르망 대표 카페, 가볍게 한 잔"},
+    {n:"카페 드 플뢰르", q:"Café de Flore Paris", d:"☕ 두 마고 바로 옆, 분위기 좋음"}
+  ]}]
+},
+/* ═══════════════ DAY 2 ═══════════════ */
+{
+  n:2, date:"9/15", dow:"화", country:"fr", city:"파리", stay:"시타딘 생제르망",
+  title:"오르세 · 피크닉 · 몽마르뜨 · 바토무슈", headline:"🎨 파리를 제대로 시작하는 날",
+  tags:["예약 있음","일몰 20:02"],
+  timeline:[
+    {period:"오전", icon:"🚶", title:"숙소 출발 → 오르세까지 도보", desc:"약 20분 · 센강 따라 여유롭게 산책하며 가는 걸 추천"},
+    {period:"오전", time:"09:30", icon:"🖼️", title:"오르세 미술관", key:true,
+     desc:"선예약 후 입장 · 대기줄이 있을 수 있어요",
+     sub:["5층부터 둘러보기 — 대표작이 위층에 모여 있어요","반 고흐 · 모네 · 르누아르 · 드가 · 대형 시계"]},
+    {period:"오전", icon:"🥖", title:"피크닉 재료 사기",
+     desc:"Maison Mulot (Rue de Seine) — 크루아상·키슈·파리지앵 샌드위치, 빠르게 들르기 좋음"},
+    {period:"오후", icon:"🧺", title:"뤽상부르 공원 피크닉 (점심)",
+     sub:["돗자리 들고 공원 즐기기","피크닉하며 점심 먹기"]},
+    {period:"오후", icon:"⛪", title:"몽마르뜨 산책",
+     sub:["사랑해벽","아베스 거리","골목 (라메종로즈 / 물랑루즈)","테르트르 광장","사크레쾨르 대성당"]},
+    {period:"오후", icon:"🥞", title:"몽마르뜨 간식",
+     sub:["Crêperie de Montmartre (Rue Dancourt) — 수제 크레페","Leonie Bakery (Av. Trudaine) — 아몬드 크루아상·키슈"]},
+    {period:"저녁", time:"19:00~19:30", icon:"🍞", title:"바토무슈 대기 + 간단한 저녁",
+     desc:"좋은 자리를 위해 미리 도착 · 승선장(Alma-Marceau) 근처 불랑제리에서 샌드위치 포장"},
+    {period:"저녁", time:"19:30 또는 20:00", icon:"🚢", title:"바토무슈 탑승 (1시간)", key:true,
+     sub:["일몰(20:02) → 블루아워 → 조명이 켜진 에펠탑"]},
+    {period:"저녁", time:"21:35~23:30", icon:"🌃", title:"개선문 전망대 야경",
+     sub:["바토무슈 후 21:35까지 개선문으로 이동","지하통로로 이동 후 보안검색·티켓 확인","⏰ 22:15까지 전망대 입장 완료 필요","파리 시내 360° 전망 — 에펠탑·라데팡스·샹젤리제","샹젤리제 거리 야간 산책 (치안이 좋아 밤에도 안전해요)"]}
+  ],
+  meals:[
+    {slot:"승선 후 저녁 (선택)", picks:[
+      {n:"Les Romantiques", q:"Les Romantiques Place de l'Alma Paris", d:"Place de l'Alma · 승선장 바로 앞 · 새벽 2시까지 · 로맨틱 디너, 오리콩피 평 좋음"}
+    ]}
+  ]
+},
+/* ═══════════════ DAY 3 ═══════════════ */
+{
+  n:3, date:"9/16", dow:"수", country:"fr", city:"파리", stay:"시타딘 생제르망",
+  title:"몽생미셸 투어", headline:"🚌 새벽부터 새벽까지, 하루 종일 투어",
+  tags:["종일 투어","이른 기상"],
+  warn:"귀가가 익일 01:30 전후예요. 다음 날(9/17) 오전은 무리하지 않는 게 좋아요.",
+  timeline:[
+    {period:"오전", time:"06:30", icon:"📍", title:"미팅", key:true,
+     sub:["메트로 6호선 Sèvres-Lecourbe역 1번 출구 앞","주소: 94 Bd Garibaldi, 75015 Paris"]},
+    {period:"오전", time:"06:40", icon:"🚌", title:"출발"},
+    {period:"오후", icon:"🏰", title:"몽생미셸 + 에트르타 + 옹플뢰르",
+     desc:"제이스마트 3코스 · 수도원 내부 동행",
+     sub:["중·석식은 현장에서 (별도 비용)"]},
+    {period:"저녁", time:"익일 01:30 전후", icon:"🌙", title:"파리 도착"}
+  ],
+  prep:["간식","보조배터리","목베개","따뜻한 겉옷"],
+  meals:[]
+},
+/* ═══════════════ DAY 4 ═══════════════ */
+{
+  n:4, date:"9/17", dow:"목", country:"fr", city:"파리", stay:"시타딘 생제르망",
+  title:"르봉마르셰 · 루브르 · 오페라", headline:"🎭 쇼핑에서 오페라까지, 한 방향으로",
+  tags:["예약 있음","공연"],
+  timeline:[
+    {period:"오전", time:"10:00", icon:"🛍️", title:"르봉마르셰 백화점 쇼핑", desc:"10시 오픈"},
+    {period:"오전", icon:"🧀", title:"La Grande Épicerie (식품관)",
+     desc:"피크닉 음식 구매 + 기념품 쇼핑 — 아래 기념품 리스트 참고"},
+    {period:"오전", icon:"🧳", title:"짐이 많으면 숙소 들르기",
+     sub:["쇼핑백 보관","튈르리 정원 이동 — 메트로 15분 / 도보 22분"],
+     desc:"짐이 많지 않으면 바로 튈르리로"},
+    {period:"오전", icon:"🧺", title:"튈르리 정원 피크닉 (점심)"},
+    {period:"오후", time:"13:30", icon:"📍", title:"Le Café Marly 앞 미팅", key:true,
+     sub:["루브르 유리 피라미드 근처","카페 마를리 테라스와 Passage Richelieu 사이 기둥 앞"]},
+    {period:"오후", icon:"🖼️", title:"루브르 박물관 가이드 관람"},
+    {period:"오후", icon:"🌳", title:"못 즐긴 튈르리 정원 더 즐기기"},
+    {period:"오후", icon:"🚶", title:"오페라 가르니에 이동 + 주변 산책", desc:"메트로 13분 / 도보 18분"},
+    {period:"저녁", time:"18:30", icon:"🏛️", title:"오페라 내부 관람",
+     sub:["Grand Escalier (대계단)","Grand Foyer","샤갈 천장화"]},
+    {period:"저녁", time:"19:30", icon:"🎭", title:"오페라 공연 시작", key:true,
+     desc:"인터미션에 내부 재관람 가능"},
+    {period:"저녁", time:"22:45~23:15", icon:"🏨", title:"숙소 복귀", desc:"메트로 20분 / 택시 13분"}
+  ],
+  souvenirGroups:[
+    {g:"La Grande Épicerie 식품관", items:[
+      "본마망 (Bonne Maman) 쿠키",
+      "트러플 오일 — Artisan de la Truffe",
+      "밤잼 — 클레망 포지에 (Clément Faugier)",
+      "라메르 (La Mère) 과자"
+    ]}
+  ],
+  meals:[{slot:"오페라 가르니에 근처 저녁식사 (선택)", note:"공연 전 여유롭게 식사", picks:[
+    {n:"Hakata Choten", u:"https://maps.app.goo.gl/SyptyKMqme5UocNXA", d:"🍜 라멘집"},
+    {n:"우동·소바 맛집", u:"https://maps.app.goo.gl/eg3p8CYPc143z6udA", d:"🍜 우동소바"},
+    {n:"Les Bacchantes", u:"https://maps.app.goo.gl/9sh8s1ASSKRtwMXA9", d:"현지인 맛집 · 예약하고 가기"},
+    {n:"Café de la Paix", u:"https://maps.app.goo.gl/dYf2rjJShBtVQ71PA", d:"오페라 광장 바로 앞 · 클래식 브라스리, 공연 전 분위기 최고",
+     sub:["테라스 좌석 예약 가능 → cafedelapaix.fr","가격대가 있는 편","예약금 120유로 선결제 (노쇼 방지용)"]},
+    {n:"La Petite Bleue", q:"La Petite Bleue Paris", d:"🥐 브런치 스타일 카페, 가볍게"}
+  ]}]
+},
+/* ═══════════════ DAY 5 ═══════════════ */
+{
+  n:5, date:"9/18", dow:"금", country:"fr", city:"파리", stay:"풀만 투르 에펠",
+  title:"웨딩스냅 · 마레 · 에펠탑", headline:"📸 파리의 마지막 날, 에펠탑 아래에서",
+  tags:["스냅 촬영","숙소 이동","일몰 19:56"],
+  timeline:[
+    {period:"오전", icon:"🧳", title:"기상 · 체크아웃 준비 · 짐 보관", desc:"캐리어는 시타딘에 보관"},
+    {period:"오전", time:"09:00~11:00", icon:"📸", title:"웨딩스냅 촬영", key:true,
+     desc:"에펠탑 주변 중심 — Pont de Bir-Hakeim · 트로카데로 일대"},
+    {period:"오전", time:"11:00~12:00", icon:"☕", title:"에펠탑 근처 카페 휴식", desc:"스냅 후 쉬면서 정리 — 아래 카페 목록 참고"},
+    {period:"오후", time:"12:00~12:50", icon:"🚇", title:"마레 이동", desc:"메트로 40~50분"},
+    {period:"오후", time:"12:50~16:30", icon:"🛍️", title:"마레지구 구경 + 쇼핑",
+     sub:["Merci · Rue des Francs-Bourgeois 중심 (편집샵/카페/쇼핑)","셰익스피어 서점","시테섬 산책"]},
+    {period:"오후", time:"16:00~17:30", icon:"🏨", title:"시타딘 → 풀만 이동 & 체크인",
+     desc:"캐리어 찾아서 먼저 옮겨두면 저녁이 편해요", key:true},
+    {period:"저녁", time:"19:30~21:00", icon:"🧺", title:"마르스광장 피크닉", key:true,
+     desc:"일몰 19:56 + 블루아워"},
+    {period:"저녁", time:"21:00~21:10", icon:"✨", title:"에펠탑 스파클링"},
+    {period:"저녁", icon:"🎷", title:"재즈바 Le Caveau de la Huchette (선택)", soft:true}
+  ],
+  meals:[
+    {slot:"에펠탑 근처 카페", picks:[
+      {n:"Café du Trocadéro", u:"https://maps.app.goo.gl/ofvequvnqhXMm3tT8", d:"테라스에서 에펠탑이 정면으로 보이는 클래식 스팟 · 피스타치오 라바케이크·에그 디시 평이 좋음 · 아침~밤늦게(02시)까지"},
+      {n:"Constant", u:"https://maps.app.goo.gl/rpJMk2kn9Z9iu8td6", d:"에펠탑 근처"},
+      {n:"Noir", u:"https://maps.app.goo.gl/fso347DzrojPkN59A", d:"파리 체인 카페 · 호지차라떼도 맛있음"},
+      {n:"Carette", u:"https://maps.app.goo.gl/GepwGaBYzomCR6EM8", d:"트로카데로 티살롱 · 에펠탑 뷰"}
+    ]},
+    {slot:"점심식사 (선택)", picks:[
+      {n:"Le Café de Mars", u:"https://maps.app.goo.gl/S4Z1iiHQNJCEFsxY6", d:"에펠탑 근처 저렴한 식당 · 로컬 감성 비스트로 카페, 조용한 골목이라 여유롭게 앉아있기 좋음"},
+      {n:"Les Cocottes", q:"Les Cocottes Saint-Dominique Paris", d:"Rue Saint-Dominique · 에펠탑 도보 10분 · 캐주얼 비스트로"},
+      {n:"L'As du Fallafel", q:"L'As du Fallafel Paris", d:"🥙 Rue des Rosiers (마레지구) · 맛+로컬감성 최상급 · ⚠️ 금요일은 11:00~15:30만 영업"}
+    ]},
+    {slot:"저녁식사 (선택)", picks:[
+      {n:"Girafe ⭐", q:"Girafe Restaurant Paris", d:"트로카데로 · 에펠탑 정면 뷰 파인다이닝 · 에펠탑 뷰 원하면 고려, 2주 전 예약 오픈"},
+      {n:"Francette", q:"Francette Paris", d:"에펠탑 옆 센강 보트 레스토랑"}
+    ]}
+  ]
+},
+/* ═══════════════ DAY 6 ═══════════════ */
+{
+  n:6, date:"9/19", dow:"토", country:"ch", city:"그린델발트", stay:"선스타 호텔",
+  title:"파리 → 그린델발트", headline:"🚆 기차 4번 갈아타고 알프스로",
+  tags:["이동일","환승 주의"],
+  tips:[{icon:"🧳", title:"짐 관리 주의", lines:[
+    "슈피츠 환승이 <b>3분</b>밖에 안 돼서 가장 위험한 구간이에요. 내리기 전에 미리 짐을 다 챙겨서 문 앞에 대기하는 게 좋아요.",
+    "스위스 기차는 짐칸이 넓지 않아서 짐을 눈에 안 보이는 곳에 두지 말고, 가능하면 좌석 근처나 시야 안에 두세요."
+  ]}],
+  timeline:[
+    {period:"오전", icon:"🧳", title:"체크아웃 → 파리 Est역 이동"},
+    {period:"오전", time:"10:43~12:28", icon:"🚆", title:"파리 Est → 스트라스부르", desc:"Omio"},
+    {period:"오후", time:"12:51~14:08", icon:"🚆", title:"스트라스부르 → 바젤 SBB", desc:"Omio"},
+    {period:"오후", time:"14:30~16:03", icon:"🚆", title:"바젤 → 슈피츠", desc:"SBB Saver Day Pass", key:true},
+    {period:"오후", time:"16:06~16:26", icon:"🚆", title:"슈피츠 → 인터라켄 Ost → 그린델발트",
+     desc:"⚠️ 슈피츠 환승 3분 · 놓치면 30분 뒤 차"},
+    {period:"저녁", icon:"🎫", title:"융프라우 VIP 패스 준비", key:true,
+     sub:["미리 인쇄해가고 사전 구매","패스 시작일은 <b>다음 날</b>로 말하기","다음날 융프라우 기차 좌석 예약하기 (VIP 패스 왕복 1회 무료)"],
+     link:{u:"https://www.jungfrau.co.kr/jungfrau/jung_view.asp?dsIdx=2230&dsType=MT&dsWriteDate=2025-7-6", label:"좌석 예약 방법 보기"}},
+    {period:"저녁", icon:"🏨", title:"선스타 호텔 체크인"}
+  ],
+  meals:[{slot:"저녁식사 (선택)", picks:[
+    {n:"Stallbeizli Heubode", u:"https://maps.app.goo.gl/VoJW8TQg8kttmWdN8", d:"마을 전망 보며 먹는 농가 퐁뒤 · ⚠️ 월·화 휴무 · 예약 권장"},
+    {n:"coop 장보기", q:"Coop Grindelwald", d:"🛒 숙소에서 간단히 해먹기"}
+  ]}]
+},
+/* ═══════════════ DAY 7 ═══════════════ */
+{
+  n:7, date:"9/20", dow:"일", country:"ch", city:"그린델발트", stay:"글레쳐블리크",
+  title:"융프라우요흐", headline:"🏔️ 유럽의 지붕, 3,454m",
+  tags:["좌석예약 필수","플랜 A/B"],
+  tips:[
+    {icon:"🎫", title:"융프라우 좌석 예약", lines:[
+      "9월 융프라우 철도는 좌석 예약이 <b>의무</b>예요. <b>아이거글렛처 ↔ 융프라우요흐</b> 구간만 전날 미리 예약하면 됩니다.",
+      "타고자 하는 시간에 맞춰 <b>전날 그린델발트 역</b>에서 시간 예약하세요.",
+      "기차는 출발 <b>10분 전까지</b> 입장.",
+      "그린델발트 → 융프라우요흐 약 45~50분 소요."
+    ]},
+    {icon:"🌤️", title:"날씨 확인", lines:[
+      "가기 전 <b>MeteoSwiss</b> 앱을 받아 Jungfraujoch를 추가해두고, 갈 수 있는 날씨인지 확인하세요."
+    ]}
+  ],
+  plans:[
+    {label:"🪂 안 1 — 인터라켄 패러글라이딩을 타는 경우",
+     items:[
+      {time:"오전", t:"선스타 조식"},
+      {time:"", t:"아이거 익스프레스 첫 차 → 융프라우요흐 도착 (미리 좌석 예약)"},
+      {time:"", t:"융프라우요흐 관람 (약 2시간) — <b>컵라면 무료</b>로 먹기"},
+      {time:"14:00", t:"그린델발트 → 인터라켄 동역 이동"},
+      {time:"15:30", t:"Big Blue 패러글라이딩 🪂", link:"https://experiences.myrealtrip.com/products/3508832"},
+      {time:"저녁", t:"인터라켄 산책 → 그린델발트 복귀, <b>글레쳐블리크 체크인</b>"}
+     ]},
+    {label:"🥾 안 2 — 그린델발트(피르스트) 패러글라이딩을 타는 경우",
+     note:"이 경우 9/20엔 아이거워크로 고산 산책을 완성하고, 패러글라이딩은 9/21로",
+     items:[
+      {time:"오전", t:"선스타 호텔 조식"},
+      {time:"", t:"아이거 익스프레스 → 융프라우요흐 관람 (약 2시간~2시간 30분) · 컵라면 무료"},
+      {time:"", t:"융프라우 보고 내려오면서 <b>아이거글렛처</b>에서 하차"},
+      {time:"오후", t:"37번 트레킹 아이거워크 (아이거글렛처 → 클라이네 샤이덱, 약 1시간)"},
+      {time:"", t:"이 구간은 좌석 예약 불필요"},
+      {time:"", t:"클라이네 샤이덱에서 그린델발트 복귀 · 숙소 이동"},
+      {time:"", t:"시간 남으면 인터라켄 다녀오는 것도 추천"}
+     ]},
+    {label:"☔ 선택 2 — 산악 날씨가 좋지 않은 경우",
+     items:[{time:"", t:"융프라우요흐 + 피르스트를 9/20 하루에 함께 소화"}]}
+  ],
+  meals:[{slot:"인터라켄 저녁식사 (선택 · 안 1인 경우)", picks:[
+    {n:"아레식당", u:"https://maps.app.goo.gl/4x472aKPr32vsbrm8", d:"인터라켄 한식당 맛집"},
+    {n:"Hüsi Bierhaus", u:"https://maps.app.goo.gl/nXT2YCys7FpvDrNC9", d:"한국인들에게 유명한 펍 · 폭립과 스위스식 돈까스인 슈니첼"},
+    {n:"Little Thai", u:"https://maps.app.goo.gl/U3ugwtSHL5Bx8EQw8", d:"태국음식점 맛집"},
+    {n:"Asllani's Corner", u:"https://maps.app.goo.gl/T6KGHxJGGgaDkKU28", d:"수제버거 맛집"},
+    {n:"Interlaken Pizza", u:"https://maps.app.goo.gl/DTeoRQBdjhLPwLvt7", d:"피자, 케밥 판매"}
+  ]}]
+},
+/* ═══════════════ DAY 8 ═══════════════ */
+{
+  n:8, date:"9/21", dow:"월", country:"ch", city:"그린델발트", stay:"글레쳐블리크",
+  title:"피르스트 액티비티", headline:"🎢 절벽길 걷고, 카트 타고, 하늘 날고",
+  tags:["오픈런","플랜 A/B"],
+  timeline:[
+    {period:"오전", time:"07:40", icon:"🚡", title:"피르스트 곤돌라역 오픈런", key:true, desc:"08:00 첫 곤돌라"},
+    {period:"오전", icon:"🥾", title:"클리프워크 → 액티비티",
+     desc:"플라이어 · 글라이더 · 마운틴카트 중 선택 (아래 액티비티 표 참고)"},
+    {period:"오후", icon:"🥪", title:"점심식사", desc:"coop에서 미리 장 봐가기"}
+  ],
+  plans:[
+    {label:"🥾 안 1 — 바흐알프제 호수 트레킹", note:"어제 인터라켄에서 패러글라이딩을 이미 탄 경우",
+     items:[{time:"오후", t:"바흐알프제 호수 왕복 (약 2시간)"}]},
+    {label:"🪂 안 2 — 그린델발트 패러글라이딩",
+     items:[
+      {time:"13:00 또는 14:30 전후", t:"First Panoramic 패러글라이딩 🪂", link:"https://www.paragliding-jungfrau.ch/wp/first-panoramic/?lang=ko"},
+      {time:"", t:"WhatsApp 예약 가능 · 현지에서도 예약 가능"},
+      {time:"", t:"시간 예약 문의해두기"}
+     ]},
+    {label:"☔ 선택 2 — 9/21 산악 날씨가 좋지 않은 경우", note:"라우터브루넨 폭포 뷰포인트 산책",
+     items:[
+      {time:"오전", t:"그린델발트 → 라우터브루넨 이동 <i>(비 오는 경우 폭포 수량이 많아져 오히려 장관)</i>"},
+      {time:"오전~점심", t:"라우터브루넨 마을 산책 + 폭포 뷰포인트 · 동선 여유롭게 (카페/산책 위주) · 우산·레인자켓 권장"},
+      {time:"오후", t:"그린델발트 복귀 또는 (시간/체력 여유 시) 인터라켄 짧은 산책"},
+      {time:"저녁", t:"그린델발트 복귀 — 다음날 긴 일정 대비 컨디션 관리"}
+     ]}
+  ],
+  nightBox:{icon:"♨️", title:"저녁 후 벨베데레 수영장 (선택)", lines:[
+    "<b>20시 이후 CHF 22</b> — 수건·차·물·과일 포함",
+    "야외에 36℃ 소금물 자쿠지, 실내 수영장은 29℃",
+    "사우나까지 이용 시 20시 이후 <b>CHF 32</b> (수영장·자쿠지 포함)",
+    "외부인 입장 수가 제한되어 있으니 당일 또는 미리 호텔에 이용 가능 여부 확인"
+  ]},
+  meals:[{slot:"저녁식사 (선택)", picks:[
+    {n:"coop 장보기", q:"Coop Grindelwald", d:"🛒 숙소에서 간단히 해먹기"},
+    {n:"Burger Station", u:"https://maps.app.goo.gl/zHxJnkg7aU6VMWGG8", d:"버거 맛집 (푸드트럭) · 저렴한 가격대"}
+  ]}]
+},
+/* ═══════════════ DAY 9 ═══════════════ */
+{
+  n:9, date:"9/22", dow:"화", country:"ch", city:"그린델발트", stay:"글레쳐블리크",
+  title:"외시넨 호수 + 블라우제", headline:"💙 알프스가 통째로 비치는 호수",
+  tags:["종일 이동","세이버 데이 패스"],
+  tips:[{icon:"🚆", title:"기차 시간 확인", lines:[
+    "SBB 앱에서 <code>Grindelwald → Kandersteg</code> 경로를 검색해서 나오는 시간에 맞춰 타세요."
+  ]}],
+  guides:[{title:"외시넨 호수 가는 법", steps:[
+    {label:"STEP 1 · 그린델발트 → 칸더슈테크", lines:["<b>07:15~07:30 전후</b> 🚆 그린델발트 출발 (세이버 데이 패스)","🚆 인터라켄 동역 → 🚆 슈피츠 → 🚆 칸더슈테크"]},
+    {label:"STEP 2 · 칸더슈테크역 → 곤돌라 하부역", lines:["🚶 도보 약 10~15분","Kandersteg Bahnhof → Kandersteg Talstation Oeschinen"]},
+    {label:"STEP 3 · 곤돌라 하부역 → 상부역", lines:["🚡 Kandersteg Talstation Oeschinen → Oeschinen Bergstation","<b>왕복 CHF 36 별도 구매 필요</b>"]},
+    {label:"STEP 4 · 상부역 → 외시넨 호수", lines:["🚶 도보 약 30분"]}
+  ]},
+  {title:"블라우제 자연공원 가는 법", steps:[
+    {label:"STEP 1 · 호수 → 칸더슈테크역", lines:["외시넨 호수 → 🚶 도보 약 30분 → 곤돌라 상부역","🚡 곤돌라 → 하부역 → 🚆 칸더슈테크역"]},
+    {label:"STEP 2 · 버스 환승", lines:["칸더슈테크역에서 🚌 버스 → Blausee BE 정류장 하차","<b>입장료 CHF 11</b>"]},
+    {label:"STEP 3 · 그린델발트 복귀", lines:["Blausee BE → 🚌 Frutigen Bahnhof → 🚆 Spiez → 🚆 Interlaken Ost → 🚆 Grindelwald","복귀 중 도시 구경 자유롭게"]}
+  ]}],
+  timeline:[
+    {period:"오전~점심", icon:"💙", title:"외시넨 호수", key:true, desc:"산책 + 사진 + 여유 + 점심"},
+    {period:"오후", icon:"🌲", title:"블라우제 자연공원", desc:"약 1~1.5시간 · 입장료 CHF 11"},
+    {period:"저녁", time:"18:00 전후", icon:"🏨", title:"그린델발트 복귀", desc:"저녁은 그린델발트에서"}
+  ],
+  meals:[
+    {slot:"점심 (호숫가, 선택)", picks:[
+      {n:"Restaurant by Berghotel Oeschinensee", q:"Berghotel Oeschinensee restaurant", d:"호숫가 바로 앞 · 스위스 전통음식·파스타·버거·치즈플레이트 · 뷰 최고"},
+      {n:"Restaurant Bergstübli", q:"Bergstubli Oeschinen Kandersteg", d:"곤돌라 상부역 근처 · 핫도그·수프·애플슈트루델, 가볍게"}
+    ]},
+    {slot:"저녁식사 (선택)", note:"※ Stallbeizli Heubode는 화요일 휴무", picks:[
+      {n:"coop 장보기", q:"Coop Grindelwald", d:"🛒 숙소에서 간단히 해먹기"},
+      {n:"Burger Station", u:"https://maps.app.goo.gl/zHxJnkg7aU6VMWGG8", d:"버거 맛집 (푸드트럭) · 저렴한 가격대"}
+    ]}
+  ]
+},
+/* ═══════════════ DAY 10 ═══════════════ */
+{
+  n:10, date:"9/23", dow:"수", country:"ch", city:"그린델발트", stay:"글레쳐블리크",
+  title:"옵션 데이", headline:"🎲 컨디션·날씨 보고 아침에 결정하는 날",
+  tags:["3가지 선택","세이버 데이 패스"],
+  guides:[
+    {title:"옵션 1 · 체르마트 당일치기 (마테호른)", badge:"이동 왕복 5~6시간",
+     steps:[
+      {label:"STEP 1 · 그린델발트 → 체르마트", lines:[
+        "<b>06:00~06:30 전후</b> 🚆 그린델발트 출발 (세이버 데이 패스)",
+        "Grindelwald → 🚆 Interlaken Ost → 🚆 Spiez → 🚆 Visp → 🚆 Zermatt",
+        "약 2시간 40분~3시간 예상",
+        "체르마트까지의 일반 열차 구간은 세이버 데이 패스로 별도 승차권 없이 이용"]},
+      {label:"STEP 2 · 체르마트역 → 고르너그라트 철도", lines:[
+        "🚶 체르마트역 맞은편 고르너그라트 철도역으로 이동",
+        "🎫 <b>Zermatt ↔ Gornergrat 왕복권 별도 구매</b> — ⚠️ 세이버 데이 패스 미포함",
+        "🚞 Zermatt → Gornergrat 약 33분",
+        "로텐보덴(Rotenboden) 중간 하차 가능 → 리펠제 방문"],
+       link:{u:"https://www.gornergrat.ch/en/products/ticket", label:"고르너그라트 티켓"}},
+      {label:"STEP 3 · 고르너그라트 전망대", lines:[
+        "🚶 마테호른·몬테로사 등 알프스 파노라마 감상",
+        "사진 + 전망 감상 약 1시간 정도"]},
+      {label:"STEP 4 · 리펠제 호수", lines:[
+        "고르너그라트 → 🚞 로텐보덴 1정거장 하산",
+        "로텐보덴역 → 🚶 리펠제(Riffelsee) 호수까지 약 10분",
+        "날씨가 맑고 바람이 적으면 <b>마테호른 반영 사진</b> 포인트",
+        "호수 산책 후 로텐보덴역 복귀 → 🚞 체르마트 하산"]},
+      {label:"STEP 5 · 점심 & 마을 산책", lines:[
+        "체르마트 마을에서 점심 (산 위에서 오래 먹기보다 내려와서 먹는 편 추천)",
+        "반호프슈트라세 · 힌터도르프의 오래된 목조가옥 · 마테호른 뷰 포인트 · 카페·기념품 쇼핑",
+        "체르마트 자체는 1.5~2시간 정도 여유 있게"]},
+      {label:"STEP 6 · 그린델발트 복귀", lines:[
+        "<b>16:00~16:30 전후</b> 체르마트 출발 추천",
+        "Zermatt → 🚆 Visp → 🚆 Spiez → 🚆 Interlaken Ost → 🚆 Grindelwald",
+        "저녁 19시대 전후 그린델발트 도착 예상",
+        "⚠️ 세 옵션 중 이동시간이 압도적으로 길어요. 전날 저녁 마테호른 날씨 확인 후 결정 추천"]}
+     ]},
+    {title:"옵션 2 · 슈피츠 + 튠호수 유람선 + 툰 구시가지", badge:"여유로운 호수 코스",
+     steps:[
+      {label:"STEP 1 · 그린델발트 → 슈피츠", lines:[
+        "<b>09:00 전후</b> 🚆 그린델발트 출발 (세이버 데이 패스)",
+        "Grindelwald → 🚆 Interlaken Ost → 🚆 Spiez",
+        "약 1시간 10~20분 예상"]},
+      {label:"STEP 2 · 슈피츠역 → 성/호숫가", lines:[
+        "Spiez Bahnhof → 🚶 슈피츠 호숫가 · 도보 약 15~20분",
+        "역에서 내려오면서 툰호수 전망 감상"]},
+      {label:"STEP 3 · 슈피츠 산책 (약 2시간)", lines:[
+        "🏰 슈피츠 성 주변","🍇 포도밭","💙 툰호수 산책로","선착장 주변","점심은 호숫가에서"]},
+      {label:"STEP 4 · 튠호수 유람선", lines:[
+        "🚶 슈피츠 성/호숫가 → Spiez Schiffstation",
+        "🚢 Spiez → Thun · 약 45~50분",
+        "2026년 9/23은 툰호수 <b>여름 운항기간</b>에 해당",
+        "시간표 기준 <code>15:34 Spiez → 16:20 Thun</code> 편이 일정 짜기 편함",
+        "세이버 데이 패스 적용되는 BLS 정기 유람선이라 별도 승선권 불필요"]},
+      {label:"STEP 5 · 툰 구시가지 & 복귀", lines:[
+        "🚶 선착장 → 툰 구시가지 · 아레강 주변 → 구시가지 → 툰 성 주변 (약 1.5~2시간)",
+        "시간 남으면 강변 카페",
+        "<b>18:00 전후</b> 툰 출발 → Thun → 🚆 Interlaken Ost → 🚆 Grindelwald",
+        "19:30~20:00 전후 그린델발트 복귀 예상"]}
+     ]},
+    {title:"옵션 3 · 베른", badge:"비 와도 괜찮은 코스",
+     steps:[
+      {label:"STEP 1 · 그린델발트 → 베른", lines:[
+        "<b>09:00 전후</b> 🚆 그린델발트 출발 (세이버 데이 패스)",
+        "Grindelwald → 🚆 Interlaken Ost → 🚆 Bern · 연결편에 따라 약 1시간 30~40분",
+        "베른역을 나오면 <b>바로 구시가지</b>라 별도 교통편이 거의 필요 없음"]},
+      {label:"STEP 2 · 오전~점심 · 구시가지", lines:[
+        "🚶 베른역 → 슈피탈가세 → 마르크트가세 → 치트글로게 방향으로 천천히 산책",
+        "🕰️ 치트글로게 시계탑",
+        "⛲ 베른의 분수와 아케이드 구경",
+        "🏠 아인슈타인 하우스 — 내부 전시까지 보면 약 30~45분",
+        "베른은 명소를 하나씩 찍기보다 <b>구시가지 자체를 걸어보는</b> 방식 추천"]},
+      {label:"STEP 3 · 점심", lines:[
+        "베른 구시가지, 아케이드 안쪽 레스토랑이나 카페에서 여유롭게",
+        "비가 와도 긴 아케이드가 있어서 세 옵션 중 <b>날씨 영향을 가장 적게</b> 받아요"]},
+      {label:"STEP 4 · 오후", lines:[
+        "🚶 베른 대성당 — 주변에서 아레강 방향 전망",
+        "🚶 니데크 다리 + 곰공원 — 아레강과 구시가지 풍경",
+        "🚶 장미공원 — 언덕 위에서 베른 구시가지 전체 조망, 사진 찍고 카페에서 쉬기",
+        "구시가지로 내려와 쇼핑·카페 · 시간 남으면 기념품 구경"]},
+      {label:"STEP 5 · 복귀", lines:["Bern → 🚆 Interlaken Ost → 🚆 Grindelwald"]}
+     ]}
+  ],
+  meals:[{slot:"저녁식사", picks:[
+    {n:"Stallbeizli Heubode", u:"https://maps.app.goo.gl/VoJW8TQg8kttmWdN8", d:"수요일 ~22시 영업 · 스위스 마지막 밤 퐁뒤로 마무리 · 예약 권장"}
+  ]}]
+},
+];
+
+const DAYS2 = [
+/* ═══════════════ DAY 11 ═══════════════ */
+{
+  n:11, date:"9/24", dow:"목", country:"it", city:"나폴리", stay:"스타호텔스 테르미누스",
+  title:"그린델발트 → 나폴리", headline:"✈️ 알프스에서 지중해로",
+  tags:["이동일","국가 이동"],
+  tips:[{icon:"🛡️", title:"나폴리 소매치기 주의", lines:[
+    "나폴리는 유럽에서도 <b>소매치기·가방 날치기로 유명한 곳</b>이에요. 특히 호텔이 있는 <b>가리발디 광장 / 중앙역 주변</b>이 그렇습니다.",
+    "가방은 어깨에 걸지 말고 <b>몸 앞쪽으로</b> 메기.",
+    "스쿠터 날치기가 흔하니 <b>차도 쪽 팔에 가방을 걸지 않기</b>.",
+    "스파카나폴리 골목 산책 중에도 크로스백은 지퍼를 앞으로 돌려서 메는 게 안전해요."
+  ]}],
+  timeline:[
+    {period:"오전", time:"10:59~11:56", icon:"🚆", title:"인터라켄 Ost → 베른"},
+    {period:"오후", time:"12:02~13:14", icon:"🚆", title:"베른 → 취리히 공항"},
+    {period:"오후", time:"16:50~18:30", icon:"✈️", title:"취리히 공항 → 나폴리 공항", desc:"SWISS", key:true},
+    {period:"저녁", time:"18:30~19:20", icon:"🛂", title:"입국심사 · 수하물", desc:"지연 가능성 고려"},
+    {period:"저녁", time:"19:20~19:50", icon:"🚕", title:"공항 → 스타호텔스 테르미누스", desc:"고정요금 택시 약 €21"},
+    {period:"저녁", time:"19:50~20:30", icon:"🏨", title:"체크인 · 샤워 · 휴식", desc:"렌터카는 다음 날 픽업"}
+  ],
+  meals:[{slot:"저녁식사 (선택)", picks:[
+    {n:"O' Sole Mio Pizza & More", q:"O Sole Mio Pizza Piazza Garibaldi Napoli", d:"가리발디 광장 · 호텔 도보 2~3분 · 도착 첫날 부담 없는 나폴리 화덕피자"},
+    {n:"Chalet Ciro - Stazione Centrale", u:"https://maps.app.goo.gl/NrLT2WjNUV4pp7678", d:"🍩 근처 도넛집 — 다음 날 아침용으로 기억해두기"}
+  ]}]
+},
+/* ═══════════════ DAY 12 ═══════════════ */
+{
+  n:12, date:"9/25", dow:"금", country:"it", city:"소렌토", stay:"카사 루치아",
+  title:"나폴리 → 소렌토", headline:"🍕 피자의 고향에서 반나절, 그리고 바다로",
+  tags:["렌트카 픽업"],
+  timeline:[
+    {period:"오전", time:"08:30~09:30", icon:"☕", title:"기상 · 느긋한 준비"},
+    {period:"오전", time:"09:30~11:00", icon:"🚶", title:"나폴리 '짧고 굵게' 구경",
+     desc:"스파카나폴리(구시가지) 산책 + 스페인 지구 구경"},
+    {period:"오전", time:"11:00~11:40", icon:"🍕", title:"브런치 / 간단식", desc:"나폴리 피자 — 아래 점심 목록 참고"},
+    {period:"오전", time:"11:40~12:30", icon:"🧳", title:"짐 맡기기 + 픽업 지점 이동",
+     desc:"짐은 들고 다니거나 보관소 활용 (차에 두고 관광 X)"},
+    {period:"오후", time:"12:30~12:50", icon:"⏱️", title:"버퍼 — 픽업 지점 도착/대기", soft:true},
+    {period:"오후", time:"13:00~13:50", icon:"🚗", title:"렌트카 픽업 (나폴리 중앙역)", key:true,
+     sub:["계약서 / 보험 / 연료정책 확인","외관 · 휠 · 유리 <b>영상 촬영</b>","🚗 차량 홀짝제 대비 <b>홀수 번호판 요청</b>","9/26에 포지타노-아말피 갈 건데 <b>그날 기준 어떤 번호판이 안전한지</b> 직원에게 한 번 더 물어보기"]},
+    {period:"오후", time:"13:50~15:20", icon:"🚗", title:"나폴리 → 소렌토 이동", desc:"픽업 직후 바로 출발"},
+    {period:"오후", time:"15:20~15:50", icon:"🏨", title:"카사 루치아 체크인 + 주차 세팅", desc:"주차장 위치 / 차량 출입 동선 확인"},
+    {period:"오후", time:"16:30~18:00", icon:"🌊", title:"소렌토 해변 수영", key:true,
+     desc:"9월 말엔 햇살 있는 오후 시간대가 더 따뜻해요 · 아래 해변 비교표 참고"},
+    {period:"저녁", time:"18:30~22:00", icon:"🍽️", title:"저녁식사 & 산책", desc:"젖은 짐은 숙소에 두고 가볍게"},
+    {period:"저녁", icon:"🌅", title:"일몰 명당", desc:"Sorrento Municipal Park (Villa Comunale) · 비토리아 광장 (Piazza Vittoria)", soft:true},
+    {period:"저녁", time:"23:00", icon:"😴", title:"취침", desc:"다음날 카프리 대비"}
+  ],
+  tips:[{icon:"🏊", title:"소렌토 해변 고르기", lines:[
+    "소렌토는 절벽 지형이라 '모래사장'보다는 <b>바위/플랫폼형</b>이 많아요.",
+    "12일차는 장거리 이동 후라 <b>시설형(샤워/라커/선베드)</b>이면 체력 관리가 훨씬 쉬워요."
+  ]}],
+  table:{title:"소렌토 해변 후보 비교", head:["해변","타입/분위기","장점","단점/주의"], rows:[
+    ["Spiaggia La Marinella","시설형(리도/비치클럽)<br><span class='sm'>무료 수영 가능</span>","선베드/샤워/탈의 등 편하게 즐기기 좋음","성수기엔 예약/만석 변수, 무료 자연해변 감성은 덜함"],
+    ["Pignatella 해변","바위/돌 플랫폼 (현지감성)<br><span class='sm'>히든 수영 명소</span>","물 맑고 '자연스팟' 느낌, 수영 만족도 높음","바위 접근이라 아쿠아슈즈 권장, 젖은 짐/샤워 불편할 수 있음"],
+    ["Bagni Regina Giovanna","자연 풀(라군) + 유적/절경<br><span class='sm'>히든 수영 명소</span>","사진/풍경/로맨틱 '스팟' 강함","시설 거의 없음, 바위 지형/도보 이동 부담"]
+  ]},
+  meals:[
+    {slot:"점심식사 (선택)", picks:[
+      {n:"L'Antica Pizzeria da Michele", u:"https://maps.app.goo.gl/Mdpor4iHHx7bSDtt9", d:"🍕 나폴리 3대 피자 · 10:30 오픈런 추천 (줄 길면 근처 Pizzeria del Purgatorio)"},
+      {n:"Antica Pizza Fritta da Zia Esterina Sorbillo", u:"https://maps.app.goo.gl/JVJaoujpkWPzSJBq6", d:"🍕 스파카나폴리 한복판 · 튀김피자, 걸으며 먹기 좋음"},
+      {n:"Chalet Ciro - Stazione Centrale", u:"https://maps.app.goo.gl/NrLT2WjNUV4pp7678", d:"🍩 가리발디 광장 · 나폴리식 그라파(도넛)+커피",
+       sub:["그라파: 나폴리 스타일의 갓 튀긴 폭신 쫄깃한 설탕 도넛","반죽에 삶은 감자를 으깨어 넣는 게 특징"]},
+      {n:"Sfogliatelle Attanasio", u:"https://maps.app.goo.gl/V5jYyhHRyeMPNF13A", d:"🥐 중앙역 근처 · 나폴리 대표 페이스트리 · 소렌토 가면서 차 안 간식용으로!"}
+    ]},
+    {slot:"저녁식사 (선택) — 예약 필수인 곳만!", picks:[
+      {n:"Bagni Delfino", u:"https://maps.app.goo.gl/jtfT1tVFETiCBTcy9", d:"Marina Grande · 석양 + 해산물"},
+      {n:"Il Gozzo Sorrento", u:"https://maps.app.goo.gl/NKprAmUqWoP4DcWP6", d:"같은 항구"},
+      {n:"Naima Restaurant", u:"https://maps.app.goo.gl/CFACPNW7DbYgwGyx5", d:"평점 최상위"},
+      {n:"Ndrè", u:"https://maps.app.goo.gl/zWhkG74p5GW1nDDc9", d:"16석 파인다이닝 · <b>더포크 앱으로 예약 필수</b>"}
+    ]}
+  ],
+  refList:{title:"나폴리 저장 맛집 리스트 (참고용)", items:[
+    "Gran Caffè Gambrinus — 헤밍웨이 카페",
+    "Pescheria Mattiucci — 해산물",
+    "10 Diego Vitagliano — 나폴리 3대 피자 (바뇰리 / 산타루치아)",
+    "Pizzeria passionamij · Il Ruttino — 현지 피자",
+    "Ristorante Senti Profumo — 중식"
+  ]}
+},
+/* ═══════════════ DAY 13 ═══════════════ */
+{
+  n:13, date:"9/26", dow:"토", country:"it", city:"소렌토", stay:"카사 루치아",
+  title:"포지타노 · 아말피", headline:"🚗 아말피 해안도로, 절벽과 바다 사이",
+  tags:["이른 기상","운전"],
+  tips:[{icon:"🚗", title:"차량 홀짝제 — 픽업 때 확인한 대로", lines:[
+    "9/25 렌트카 픽업 때 직원에게 확인한 <b>번호판이 오늘(9/26) 통행 가능한지</b> 다시 한번 체크하고 출발하세요.",
+    "만약 <b>우리 차는 해당 없다</b>고 확인받았다면, 아래 이동 시간은 신경 안 쓰셔도 돼요 — 이른 출발은 단속 때문이 아니라 <b>주차 자리·교통 혼잡을 피하기 위한 것</b>일 뿐이에요."
+  ]}],
+  timeline:[
+    {period:"오전", time:"07:00~07:25", icon:"🎒", title:"기상 / 간단 준비",
+     desc:"수영복·타월·아쿠아슈즈·선크림을 <b>차에 미리 세팅</b>"},
+    {period:"오전", time:"07:30", icon:"🚗", title:"소렌토 숙소 출발", key:true,
+     sub:["새벽엔 버스/정체가 적어서 SS163 드라이브 만족도 최고","포지타노 주차장이 9시 이후 만차 흔해서 이른 출발이 유리"]},
+    {period:"오전", time:"08:40~09:00", icon:"🅿️", title:"포지타노 도착 & 주차장 확보",
+     sub:["9시 이후 만차가 흔해서 그 전에 도착","추천: Parcheggio Mandara / Parcheggio Di Gennaro","<b>Di Gennaro 주차장은 사전예약</b>하고 가기"],
+     link:{u:"https://parkingpositano.com/en", label:"포지타노 주차 예약"}},
+    {period:"오전", time:"09:00~11:30", icon:"📸", title:"전망대 · 골목 · 부티크 산책",
+     sub:["전망대에서 사진","비알레 파시테아(Viale Pasitea) 골목 산책","부티크·리넨샵 구경","위에서 아래로 내려오며 해변까지 이동"]},
+    {period:"오후", time:"13:30~15:50", icon:"🏊", title:"포지타노 해변 수영",
+     desc:"메인: Spiaggia Grande · 조금 더 조용: Fornillo · 필요시 해변 샤워 시설 활용"},
+    {period:"오후", icon:"🏊", title:"피오르도 디 푸로레 (Fiordo di Furore) — 수영 한 번 더!",
+     desc:"포지타노 해변과는 또 다른 느낌, 여기서도 수영 가능해요",
+     sub:["포지타노에서 🚗 약 20~25분 드라이브","절벽 아래 작은 해변이라 규모는 작지만 가장 인상적인 스팟 — 수영복 다시 챙기기","다리 위에서 사진 찍기"]},
+    {period:"오후", time:"17:00~18:50", icon:"⛪", title:"아말피 관광",
+     desc:"피오르도 → 아말피 🚗 약 15분 · 아말피 성당 · 골목 · 레몬 그라니타"},
+    {period:"저녁", icon:"🚗", title:"아말피 → 소렌토", desc:"🚗 약 1시간 20분"},
+    {period:"저녁", time:"21:00 이후", icon:"🍽️", title:"소렌토 도착 · 저녁식사"}
+  ],
+  meals:[
+    {slot:"점심식사 (선택)", picks:[
+      {n:"Posides", q:"Posides Positano", d:"Viale Pasitea · 가족 운영 로컬 맛집, 현지 평가 최상위 · <b>예약 불가·오픈런 필수</b>, 11:30~11:45 도착 추천"},
+      {n:"Da Gabrisa", u:"https://maps.app.goo.gl/BH749b4PkZZgLfPZ6", d:"Viale Pasitea · 파노라마 뷰 파인다이닝, 12시 오픈 · 예약 필요",
+       sub:["fried calamari","스테이크","positanese 파스타"]},
+      {n:"까자 에 보떼가", q:"Casa e Bottega Positano", d:"🥪 가벼운 브런치"},
+      {n:"Calajanara", u:"https://maps.app.goo.gl/AxKGXKoRYkdRWB576", d:"Conca dei Marini · 절벽뷰 해산물 파스타 · 맛있는 파스타를 먹고 싶다면! 포지타노-아말피 사이 도로변이라 <b>Furore Fjord</b> 갈 때 함께 추천"}
+    ]},
+    {slot:"저녁식사 (선택, 소렌토 복귀 후)", picks:[
+      {n:"La Cantinaccia del Popolo", q:"La Cantinaccia del Popolo Sorrento", d:"현지인들이 매일 줄 서는 로컬 맛집 · 대기 30~45분 각오"},
+      {n:"Porta Marina Seafood", q:"Porta Marina Seafood Sorrento", d:"Marina Grande · 가족 운영 생선구이",
+       sub:["문어구이 (Polpo alla brace)","홍합조개찜 (Sautée di cozze e vongole)","새우+문어튀김 (Frittura di gamberi e calamari)"]},
+      {n:"AZZ! Italian Tavern", q:"AZZ Italian Tavern Sorrento", d:"라자냐 맛집"}
+    ]}
+  ],
+  refList:{title:"소렌토 저장 맛집 리스트 (참고용)", items:[
+    "Bagni Regina Giovanna — 로마유적 + 수영",
+    "SpizzichiAMO — 샌드위치",
+    "Ristorante Pizzeria Tasso — 글루텐프리 대응",
+    "Nalù Trattoria italiana — 현지인 웨이팅 파스타 맛집",
+    "Raki — 레몬 젤라또, stuffed lemon으로 먹기"
+  ]}
+},
+/* ═══════════════ DAY 14 ═══════════════ */
+{
+  n:14, date:"9/27", dow:"일", country:"it", city:"카프리", stay:"웨버 앰배서더",
+  title:"소렌토 → 카프리", headline:"⛴️ 푸른 동굴이 있는 섬",
+  tags:["페리","짐 보관"],
+  guides:[{title:"카프리 가는 법", steps:[
+    {label:"STEP 1 · 조식 + 체크아웃", lines:["06:30~07:00 기상","조식 후 짐 정리","🚗 소렌토 Marina Piccola 항구로 이동"]},
+    {label:"STEP 2 · 렌터카 주차", lines:[
+      "소렌토 항구 인근 주차장에 차량 1박 주차",
+      "추천: <b>Garage Marina Piccola</b> (또는 Garage il Faro)",
+      "다음 날 카프리에서 돌아올 때까지 차는 소렌토에 두기",
+      "⚠️ 주차할 때 직원에게 <code>Capri, one night</code>이라고 말해 익일 출차임을 확실히 전달",
+      "9/28 차량 회수 예정시간까지 약 27시간이므로 <b>'24시간 요금 + 초과요금'</b> 확인",
+      "1박(24시간) 약 <b>60~75유로</b>"]},
+    {label:"STEP 3 · 소렌토 → 카프리", lines:[
+      "07:30 전후 항구 도착 추천",
+      "🎫 미리 예약한 페리 체크인",
+      "⛴️ 08:00 전후 Sorrento → Capri · 약 25~30분",
+      "카프리에서는 <b>Marina Grande</b>에 도착"]},
+    {label:"STEP 4 · 카프리 도착 후 짐 보관", lines:[
+      "캐리어를 들고 보트투어를 할 수 없으므로 <b>항구에서 먼저 짐 보관</b>",
+      "일부 보트업체는 큰 짐 탑승 불가 — Marina Grande의 <b>유료 짐 보관소</b> 이용 안내",
+      "수영복·선크림·선글라스·얇은 겉옷 정도만 작은 가방에 챙기기"]}
+  ]}],
+  timeline:[
+    {period:"오전", time:"09:30~11:00", icon:"🚤", title:"카프리 섬 일주 · 블루동굴 보트 투어", key:true,
+     sub:["대부분 마리나 그란데 항구 인근에서 출발","투어 업체에 <b>당일 블루동굴 운영 여부</b> 확인","파도와 대기시간에 따라 블루동굴 입장은 불가능할 수 있음"],
+     link:{u:"https://www.getyourguide.com/capri-l693/capri-boat-tour-with-stop-by-the-blue-grotto-t170874/", label:"보트투어 예약"}},
+    {period:"오전", icon:"🚌", title:"아나카프리 이동",
+     sub:["보트투어 종료 후 Marina Grande 복귀","🚌 버스로 Anacapri 이동 (항구 옆 정류장)","캐리어는 계속 Marina Grande에 보관해두는 게 편함"]},
+    {period:"오후", icon:"🚠", title:"몬테 솔라로 체어리프트",
+     sub:["🚶 아나카프리 중심 → 체어리프트 승강장","🚠 몬테 솔라로 정상으로 이동","정상에서 카프리섬·파라글리오니·나폴리만 전망","왕복 포함 약 1~1.5시간 확보 추천","☁️ 구름이 많거나 바람이 강하면 과감하게 생략하고 아나카프리 골목 산책"]},
+    {period:"오후", time:"13:10~15:00", icon:"🛍️", title:"카프리타운 (Piazzetta) 산책 + 쇼핑",
+     desc:"명품·부티크 쇼핑이나 골목 구경 · 기념품 · 젤라또"},
+    {period:"오후", time:"15:00", icon:"🏨", title:"웨버 앰배서더 호텔 체크인", key:true,
+     desc:"카프리에서 무료 셔틀 이용"},
+    {period:"오후", time:"15:30~18:00", icon:"🏖️", title:"호텔 프라이빗 해변 수영 & 휴식",
+     desc:"호텔 바로 앞 마리나 피콜라 해변에서 수영 + 선베드 휴식"},
+    {period:"저녁", time:"19:00 이후", icon:"🌅", title:"저녁 식사 & 야경", desc:"석양 보며 저녁 → 낭만적인 카프리 밤"}
+  ],
+  meals:[
+    {slot:"점심식사", picks:[
+      {n:"Pizza e Pasta", u:"https://maps.app.goo.gl/4Y5hzDbVrfeBQt4KA", d:"🍕 아나카프리 피자 맛집"}
+    ]},
+    {slot:"간식", picks:[
+      {n:"Buonocore", q:"Buonocore Capri gelato", d:"🍨 Via Vittorio Emanuele · 카프리 젤라또 맛집"}
+    ]},
+    {slot:"저녁식사 (선택)", picks:[
+      {n:"Al Grottino", u:"https://maps.app.goo.gl/KfJbjwz7H4PLDp7N7", d:"Via Longano · 가족 운영 로컬 맛집 · 레몬 파스타 · 카프레제 라비올리"},
+      {n:"Pulalli", q:"Pulalli Capri", d:"피아체타 시계탑 위 · 피아체타 바로 옆이라 뷰가 장점 · 전망 최고, 예약 권장"}
+    ]}
+  ]
+},
+/* ═══════════════ DAY 15 ═══════════════ */
+{
+  n:15, date:"9/28", dow:"월", country:"it", city:"로마", stay:"콜론나 팰리스",
+  title:"카프리 → 소렌토 → 로마", headline:"🚗 페리 타고, 3시간 반 달려 로마로",
+  tags:["이동일","렌트카 반납"],
+  timeline:[
+    {period:"오전", time:"07:30~09:50", icon:"🧳", title:"조식 · 짐 정리 · 체크아웃",
+     sub:["호텔 셔틀 등을 이용해 Marina Grande 이동","페리 출발 <b>30분 전</b>에는 항구 도착 추천"]},
+    {period:"오전", time:"10:00~10:30 전후", icon:"⛴️", title:"카프리 → 소렌토 페리",
+     desc:"약 20~30분 · 늦어도 10:30 전후 출발"},
+    {period:"오전", time:"11:00", icon:"🚗", title:"소렌토 도착 — 차량·캐리어 회수", desc:"전날 맡겨둔 렌터카 찾기"},
+    {period:"오후", time:"11:00~12:00", icon:"🥪", title:"소렌토에서 간단히 점심",
+     sub:["로마까지 운전이 길어서 1시간 이상 식사하기보다 <b>샌드위치·파니니</b> 정도로 간단히","11:30~12:00에는 로마로 출발하는 걸 목표로"]},
+    {period:"오후", time:"12:00~16:30", icon:"🚗", title:"소렌토 → 로마", key:true,
+     sub:["약 3시간~3시간 30분 · 휴게소 1회","내비게이션에서 <b>유료도로 이용 + ZTL 회피</b> 설정","주유 조건이 Full-to-Full이면 로마 외곽에서 마지막 주유"]},
+    {period:"오후", time:"17:00~17:30", icon:"🔑", title:"로마 테르미니역 렌트카 반납", key:true,
+     sub:["차량 전체 외관 영상","휠 / 범퍼 사진","주행거리","연료 게이지","반납 장소 사진","직원 확인 후 <b>반납 확인서/이메일</b> 받아두기"]},
+    {period:"저녁", time:"17:30~", icon:"🏨", title:"콜론나 팰리스 체크인 & 휴식",
+     sub:["반납 후 택시/도보로 숙소 이동","캐리어 정리 + 샤워 / 잠깐 쉬기"]},
+    {period:"저녁", icon:"🌃", title:"야경 산책",
+     desc:"트레비 분수 → 판테온 → 나보나 광장 (컨디션에 맞춰 1~2곳만)"}
+  ],
+  tips:[
+    {icon:"🚇", title:"로마 교통권 — 결론: 그냥 카드로 탭하세요", lines:[
+      "<b>결론부터: 패스 미리 살 필요 없어요.</b> 신용·체크카드(또는 폰)를 메트로 개찰구/버스 단말기에 그냥 <b>탭(Tap&Go)</b>하면 자동으로 요금이 빠지고, <b>하루 최대 €8.50까지만</b> 청구돼요 — 그 이상 타도 추가로 안 나가요.",
+      "1회권(BIT)은 €1.50로 100분 동안 버스·트램 무제한 + 지하철 1회. 하루 6번 이상 탈 게 아니면 패스보다 그냥 탭하는 게 항상 더 싸거나 같아요.",
+      "저희 일정처럼 '도보 위주 + 가끔 메트로·택시'라면 <b>패스(24h €8.50 / 48h €15 / 72h €22)는 오히려 손해</b>인 경우가 많아요 — 하루에 지하철을 4번 넘게 탈 계획이 있을 때만 패스를 고려하세요.",
+      "공항↔시내 레오나르도 익스프레스(€14)는 이 요금과 별도예요."
+    ]},
+    {icon:"🛡️", title:"로마 안전/소지품 메모", lines:[
+      "인파 많은 곳(콜로세움/트레비/스페인계단)에서는 <b>가방 앞으로</b>, 지퍼 잠그기, 휴대폰 손목 스트랩 추천",
+      "레스토랑/카페에서 <b>의자에 가방 걸어두지 않기</b> (바닥도 X)",
+      "'오늘은 이동/쇼핑이 많다' 싶은 날은 택시/우버로 체력 아끼기"
+    ]}
+  ],
+  meals:[{slot:"저녁식사 (선택)", picks:[
+    {n:"Nest - Handmade Chinese Dumpling", u:"https://maps.app.goo.gl/6u3H8TnUCrdci2H29", d:"샤오롱바오 · 파스타에 지쳤을 때!"},
+    {n:"Shiroya", u:"https://maps.app.goo.gl/qjefUNQGXLoTaKXL7", d:"미슐랭 맛집 · 매콤한 국물이 땡긴다면 스파이시 라멘과 연어롤!"},
+    {n:"La Campana", u:"https://maps.app.goo.gl/X29RnXVDL6Uf3DYW9", d:"로마 최고령 레스토랑 · 호박꽃 튀김, 아티초크가 맛있음 · ⚠️ 전화 예약만 가능 · <b>월요일 휴무라 다른 날 가기</b>"},
+    {n:"Life 식당", u:"https://maps.app.goo.gl/cRMf2N9HShqYi2ao7", d:"로마 스페인 광장 근처 지중해식 맛집 · 예약 필요"},
+    {n:"Two Sizes", u:"https://maps.app.goo.gl/rQr7c9JyFwkZqSVY6", d:"☕ 3대 티라미수 맛집"},
+    {n:"Mr. 100 Tiramisù", u:"https://maps.app.goo.gl/6B1PTkkY9AQSThwe8", d:"☕ 3대 티라미수 맛집"},
+    {n:"Pompi", u:"https://maps.app.goo.gl/Vsa8HX5Sh9iyyCck8", d:"☕ 3대 티라미수 맛집"},
+    {n:"La Casa del Caffè Tazza d'Oro", u:"https://maps.app.goo.gl/2fh7nkkhvukHhFSh9", d:"☕ 판테온 바로 옆 · 로마 3대 커피 중 하나"},
+    {n:"Gelateria Della Papessa", u:"https://maps.app.goo.gl/UfjwkGQPLq1YJzmy9", d:"🍨 트레비-스페인계단 사이"}
+  ]}]
+},
+/* ═══════════════ DAY 16 ═══════════════ */
+{
+  n:16, date:"9/29", dow:"화", country:"it", city:"로마", stay:"콜론나 팰리스",
+  title:"바티칸 투어", headline:"⛪ 오전은 회복, 오후는 미켈란젤로",
+  tags:["예약 있음"],
+  timeline:[
+    {period:"오전", icon:"😴", title:"늦잠 / 조식 / 브런치 + 컨디션 관리", desc:"오후 투어 대비해서 오전은 '회복' 위주"},
+    {period:"오후", time:"12:30~13:10", icon:"🚶", title:"바티칸 이동 & 입장 준비", desc:"보안검색/대기 고려해서 여유 있게"},
+    {period:"오후", time:"13:30~18:00 전후", icon:"⛪", title:"바티칸 패스트트랙 투어", key:true,
+     desc:"4~5시간 소요 (투어 종료 시간은 현장 상황에 따라 변동)"},
+    {period:"저녁", time:"18:00~20:00", icon:"🍽️", title:"저녁", desc:"프라티/바티칸 주변에서 가볍게"},
+    {period:"저녁", icon:"🍨", title:"올드브릿지 젤라또", link:{u:"https://maps.app.goo.gl/RVM5voLRTs2f31u97", label:"지도"}},
+    {period:"저녁", icon:"🌃", title:"콜로세움 야경 (선택)", soft:true}
+  ],
+  meals:[
+    {slot:"점심식사 (선택)", picks:[
+      {n:"Terrazza e bar Rinascente", u:"https://maps.app.goo.gl/paP72xxfZ15L8ngV8", d:"로마 루프탑 바"},
+      {n:"Nest - Handmade Chinese Dumpling", u:"https://maps.app.goo.gl/6u3H8TnUCrdci2H29", d:"샤오롱바오 · 파스타에 지쳤을 때!"},
+      {n:"Shiroya", u:"https://maps.app.goo.gl/qjefUNQGXLoTaKXL7", d:"미슐랭 맛집 · 스파이시 라멘과 연어롤"},
+      {n:"La Campana", u:"https://maps.app.goo.gl/X29RnXVDL6Uf3DYW9", d:"로마 최고령 레스토랑 · 호박꽃 튀김, 아티초크 · 전화 예약만 · 월요일 휴무"},
+      {n:"Life 식당", u:"https://maps.app.goo.gl/cRMf2N9HShqYi2ao7", d:"스페인 광장 근처 지중해식 · 예약 필요"}
+    ]},
+    {slot:"저녁식사 (선택)", picks:[
+      {n:"La Soffitta Renovatio", u:"https://maps.app.goo.gl/tqKA9F6hV8orrkp8A", d:"바티칸 성벽 앞 · 투어 끝나고 도보 2분 · 피자·라자냐"},
+      {n:"Vinsanto Vino & Cucina", u:"https://maps.app.goo.gl/LUkhwXkMHMpuoJgQ7", d:"투어 끝나고 연어 스테이크 맛집"}
+    ]}
+  ]
+},
+/* ═══════════════ DAY 17 ═══════════════ */
+{
+  n:17, date:"9/30", dow:"수", country:"it", city:"로마", stay:"콜론나 팰리스",
+  title:"로마 산책 + 쇼핑", headline:"🌅 마지막 밤, 핀초 언덕의 일몰",
+  tags:["쇼핑","일몰 18:53"],
+  timeline:[
+    {period:"오전", icon:"☕", title:"여유롭게 기상 & 조식/브런치"},
+    {period:"오전", time:"11:30~13:00", icon:"🏛️", title:"콜로세움 외관 + 주변 산책",
+     desc:"사진/분위기 위주, 내부 입장 X",
+     sub:["콘스탄티누스 개선문","Via dei Fori Imperiali 주변 산책","포로 로마노는 밖에서 전망만","약 1~1.5시간이면 충분"]},
+    {period:"오후", time:"14:30~16:30", icon:"🛍️", title:"스페인 계단 → 콘도티 → 코르소 쇼핑",
+     desc:"아래 마트 쇼핑 리스트 참고"},
+    {period:"오후", time:"16:30~19:00", icon:"🌳", title:"보르게세 공원(호수) 산책", desc:"가볍게 산책/휴식 후 일몰 포인트로 이동"},
+    {period:"저녁", time:"18:00 전후부터", icon:"🌅", title:"핀초 언덕 (Pincio Terrace) 일몰", key:true,
+     desc:"9월 30일 로마 일몰은 약 <b>18:53</b> · 18시 전후부터 올라가 자리 잡기 추천"},
+    {period:"저녁", icon:"⛲", title:"포폴로 광장으로 내려오기", desc:"핀초 테라스 → 포폴로 광장 (야경/분위기)"},
+    {period:"저녁", time:"19:00~21:00", icon:"🍽️", title:"저녁식사"},
+    {period:"저녁", icon:"🌃", title:"야경 1곳 (선택)", desc:"컨디션 좋으면 트레비/판테온/나보나 중 1곳만", soft:true}
+  ],
+  souvenirGroups:[
+    {g:"1. 이탈리아 과자", items:[
+      "<b>포켓커피</b> (2유로) — 여름엔 판매 중단, 빨강=카페인 있음 / 파랑=디카페인. 선물용으로 더 살 걸 아쉬워하는 후기 많음",
+      "<b>Baiocchi 피스타치오 과자</b> (3.79유로) — 현지인들도 많이 먹음, 맛있지만 가격이 좀 비싼 편",
+      "<b>누텔라 B-레디</b> (1.3유로) — 한국엔 없는 제품, 걷다가 지칠 때 간식으로 추천",
+      "<b>1936 감자칩</b> (3.15유로) — 사이즈별 가격 다양, 유명한 브랜드라 무난한 맛",
+      "<b>피스타치오 캔디(로사나)</b> — 헤이즐넛맛도 있음, 피스타치오 좋아하면 추천 / 호불호 있을 수 있음",
+      "<b>레몬캔디</b> — 요즘은 다이소에서도 구매 가능해 현지 구매 메리트 줄어듦"
+    ]},
+    {g:"2. 트러플 · 올리브오일", items:[
+      "<b>트러플 글라인더</b> (19.50유로) — 안 사서 후회한다는 후기 → \"보이면 무조건 사라\"",
+      "<b>트러플 소스</b> (6.8유로) — 한국보다 저렴, 마트용으로 충분히 만족",
+      "<b>올리브오일</b> — 종류가 매우 다양하지만 유리병이라 무거움. 사려면 캐리어 여유 필요"
+    ]},
+    {g:"3. 커피", items:[
+      "<b>라바짜 금색(오로)</b> — 현지인 추천 1순위지만 실제 판매하는 곳이 적음",
+      "<b>CONAD PB 커피</b> — 합리적 가격, 단 드립/에스프레소/모카포트용 <b>입자 굵기 구분</b> 주의 필요",
+      "<b>모카포트(비알레티)</b> — 이탈리아 대표 기념품, 요즘은 전기포트처럼 쓸 수 있는 제품도 있음",
+      "<b>오르조(보리커피)</b> (1.2유로) — 커피 못 마시는 사람에게 추천, 아이스라떼로도 가능, 한국보다 훨씬 저렴해 <b>강력 추천템</b>"
+    ]},
+    {g:"4. 파스타", items:[
+      "<b>바릴라</b> — 유명 브랜드라 품절 많음 (마트 4곳 다 품절인 경우도)",
+      "<b>CONAD 리조또용 쌀</b> — 크림소스로 해먹었는데 매우 만족"
+    ]},
+    {g:"5. 와인", items:[
+      "이탈리아 쇼핑리스트 필수템, 3~5천원대 저가 와인도 구매",
+      "유리병이라 무거우니 <b>항공 수하물 무게</b> 고려 필요"
+    ]},
+    {g:"6. 기타", items:[
+      "<b>마비스 치약</b> — 대표 기념품, 세트 판매 多, 요즘 한국서도 구매 가능",
+      "<b>보로탈코 바디크림</b> (4.2유로) — 가이드 추천, 현지인도 많이 씀, 베이비파우더 향",
+      "<b>바질/피스타치오 페스토</b> — 다양하고 가격 좋지만 무거워서 많이 못 사옴"
+    ]}
+  ],
+  souvenirNote:"쇼핑 장소: 로마 CONAD (Via Buonarroti, 41852, 00185 Roma RM)",
+  meals:[
+    {slot:"점심식사 (선택)", picks:[
+      {n:"Ristorante Trattoria Antonio al Pantheon", u:"https://maps.app.goo.gl/CitCJQdoyTg1vgtr8", d:"판테온 근처 맛집"},
+      {n:"La Casa del Caffè Tazza d'Oro", u:"https://maps.app.goo.gl/2fh7nkkhvukHhFSh9", d:"☕ 판테온 바로 옆 · 로마 3대 커피 중 하나"}
+    ]},
+    {slot:"저녁식사 (선택)", picks:[
+      {n:"Nest - Handmade Chinese Dumpling", u:"https://maps.app.goo.gl/6u3H8TnUCrdci2H29", d:"샤오롱바오 · 파스타에 지쳤을 때!"},
+      {n:"Shiroya", u:"https://maps.app.goo.gl/qjefUNQGXLoTaKXL7", d:"미슐랭 맛집 · 스파이시 라멘과 연어롤"},
+      {n:"La Campana", u:"https://maps.app.goo.gl/X29RnXVDL6Uf3DYW9", d:"로마 최고령 레스토랑 · 호박꽃 튀김, 아티초크 · 전화 예약만 · 수요일이라 <b>오늘 방문 가능</b>"},
+      {n:"Life 식당", u:"https://maps.app.goo.gl/cRMf2N9HShqYi2ao7", d:"스페인 광장 근처 지중해식 · 예약 필요"}
+    ]},
+    {slot:"디저트", picks:[
+      {n:"Two Sizes", u:"https://maps.app.goo.gl/rQr7c9JyFwkZqSVY6", d:"☕ 3대 티라미수 맛집"},
+      {n:"Mr. 100 Tiramisù", u:"https://maps.app.goo.gl/6B1PTkkY9AQSThwe8", d:"☕ 3대 티라미수 맛집"},
+      {n:"Pompi", u:"https://maps.app.goo.gl/Vsa8HX5Sh9iyyCck8", d:"☕ 3대 티라미수 맛집"},
+      {n:"La Casa del Caffè Tazza d'Oro", u:"https://maps.app.goo.gl/2fh7nkkhvukHhFSh9", d:"☕ 로마 3대 커피"},
+      {n:"Gelateria Della Papessa", u:"https://maps.app.goo.gl/UfjwkGQPLq1YJzmy9", d:"🍨 트레비-스페인계단 사이"}
+    ]}
+  ]
+},
+/* ═══════════════ DAY 18 ═══════════════ */
+{
+  n:18, date:"10/1", dow:"목", country:"it", city:"로마 → 인천", stay:"—",
+  title:"귀국일", headline:"🏠 집으로",
+  tags:["이동일"],
+  timeline:[
+    {period:"오전", icon:"🧳", title:"체크아웃 준비 + 마지막 산책/카페", desc:"숙소 근처 짧게"},
+    {period:"오후", icon:"🚆", title:"테르미니 → FCO", desc:"레오나르도 익스프레스 또는 공항버스"},
+    {period:"오후", icon:"✈️", title:"FCO 출발", key:true, desc:"출발 3시간 전 도착 기준으로 역산"}
+  ],
+  meals:[]
+}
+];
+
+const COUNTRIES = {
+  fr:{
+    flag:"🇫🇷", name:"프랑스 · 파리", short:"파리", nights:"5박", dates:"9/14 – 9/19",
+    intro:"미술관·피크닉·웨딩스냅이 이어지는 5일. 도보와 메트로 위주로 여유 있게 움직여요.",
+    orient:[
+      "🙅 <b>팁 문화 없음</b> — 서비스료(포함)가 대부분 자동 포함이라 별도 팁 필수 아님. 만족스러웠으면 잔돈 정도만",
+      "🚻 <b>화장실</b> — 유료인 곳 많음 (0.5~1유로), 카페 이용 후 화장실 쓰는 게 자연스러움. 동전 소지 추천",
+      "💳 <b>카드</b> — 거의 모든 곳에서 카드 결제 가능, 소액도 카드로 무난",
+      "📅 <b>예약 문화</b> — 인기 레스토랑은 예약금 선결제(노쇼 방지)가 흔함. Café de la Paix처럼 100유로 이상도 있음",
+      "🕐 <b>영업시간</b> — 많은 상점이 일요일 휴무, 몽주약국 같은 약국도 시간 확인 필요"
+    ],
+    cards:[
+      {icon:"📱", title:"교통 앱", list:[
+        "<b>Bonjour RATP</b> · <b>IDF Mobilités</b> — 지하철은 구글맵 대신 이 앱들에서 확인하는 게 업데이트가 더 빨라요.",
+        "나비고 앱에서 교통카드 등록해서 태깅하는 방법도 있지만, <b>안드로이드는 태그가 안 될 수 있어</b> 실물권을 추천드려요."
+      ], links:[
+        {u:"https://m.blog.naver.com/ducky777/224305132661", label:"나비고 앱 회원가입 방법"},
+        {u:"https://blog.naver.com/ducky777/224314304381", label:"주간권 구매·등록 방법"}
+      ]},
+      {icon:"🎫", title:"나비고 주간권 vs 일회권", rows:[
+        ["나비고 주간권","1인 <b>32.4유로</b> (발급 비용 5유로 별도) · 공항 포함 가격<br><span class='sm'>증명사진 필요 · 공항에서는 현재 주간권 구매가 어려움</span>","걷기보다 교통수단을 더 이용한다면"],
+        ["나비고 이지 (1회권)","<b>2유로</b> (카드 발급) + 교통편마다 구매","공항 택시 + 숙소 이동 택시 + 걷기 많다면"]
+      ]},
+      {icon:"✈️", title:"공항 → 시내", list:[
+        "<b>⭐ 볼트(Bolt) 추천</b> — 한국에서 미리 카드 등록해가기<br>· 파리 공항에서 <b>VTC</b>라고 적힌 검정 바닥 따라가기, 1gate 10d에서 탑승<br>· 공항에서 프로모션 코드 <b>BONVOYAGE</b> 입력하면 70% 할인코드 생성 → 그 후에 볼트 부르기",
+        "<b>택시 (정찰제)</b> — 좌안 65유로 / 우안 56유로 · <b>시타딘은 좌안</b>",
+        "<b>RER B 공항철도</b> (1인 14유로) — Saint-Michel Notre-Dame역 하차 후 도보 5분이면 시타딘 생제르망<br>· RER B 승강장 무인기계에서 나비고 이지 발급(2유로) + 공항전용 1회권(14유로) 추가 발급"
+      ]},
+      {icon:"🌇", title:"테마 스팟 · 에펠탑 뷰 맛집·카페", list:[
+        "<b>Girafe</b> (트로카데로) — 에펠탑 정면 파인다이닝, 최고의 뷰 · 2주 전 예약",
+        "<b>Café du Trocadéro</b> — 테라스에서 정면 뷰, 캐주얼하게",
+        "<b>Carette</b> (트로카데로 광장) — 티살롱, 뷰+디저트",
+        "<b>트로카데로 광장</b> — 무료! 노을 시간대 가장 붐비지만 사진은 최고",
+        "<b>비르하켐 다리</b> — 영화에도 나온 스팟, 다리 위에서 에펠탑 정면 (Day 5 스냅 장소)"
+      ]},
+      {icon:"🏛️", title:"시간 남으면 — 놓치면 아쉬운 파리", list:[
+        "노트르담 대성당 — 외부만 (내부 재건축 진행 상황 방문 전 확인)",
+        "생트샤펠 — 스테인드글라스로 유명, 시테섬",
+        "퐁피두 센터 — 현대미술, 옥상 전망대",
+        "카타콤브 드 파리 — 지하 해골 유적, 호불호 있음"
+      ]},
+      {icon:"☔", title:"비 오는 날 대안", list:[
+        "오르세 · 루브르 — 이미 일정에 있지만 순서 바꿔서 비 오는 날로 옮기기 좋음",
+        "갤러리 라파예트 — 백화점 옥상 전망대(무료), 실내 쇼핑",
+        "카페 투어 — 생제르망 골목 카페들 하나씩 들르기"
+      ]}
+    ]
+  },
+  ch:{
+    flag:"🇨🇭", name:"스위스 · 그린델발트", short:"그린델발트", nights:"5박", dates:"9/19 – 9/24",
+    intro:"산악 날씨가 매일을 좌우해요. 플랜 A/B를 늘 준비하고 아침에 결정하는 게 좋아요.",
+    orient:[
+      "🙅 <b>팁 문화 없음</b> — 프랑스와 마찬가지로 서비스료 포함, 팁 필수 아님",
+      "🚻 <b>화장실</b> — 기차역·관광지는 대부분 무료지만 산악 레스토랑은 이용 손님 우선",
+      "💳 <b>카드 vs 현금</b> — 카드가 기본이지만 소액 매점·버스는 현금(CHF)이 편할 때 있음. 스위스는 유로존 아님 — CHF 환전 필요",
+      "💰 <b>물가</b> — 유럽에서도 최상위권으로 비쌈. 마트(coop/Migros)에서 장 보면 체감 물가 확 낮아짐",
+      "📅 <b>예약 문화</b> — 산악열차·곤돌라·패러글라이딩은 대부분 온라인 시간대 예약이 기본"
+    ],
+    cards:[
+      {icon:"🎫", title:"패스 정리", rows:[
+        ["세이버 데이 패스","지역 내 기차·버스·유람선 대부분 커버","9/22 외시넨 · 9/23 옵션데이"],
+        ["융프라우 VIP 패스","미리 인쇄+사전 구매 · 시작일은 <b>도착 다음 날</b>로","융프라우 왕복 1회 무료"],
+        ["별도 구매 필요","외시넨 곤돌라 왕복 <b>CHF 36</b><br>고르너그라트 왕복권 (체르마트 옵션)<br>블라우제 입장료 <b>CHF 11</b>",""]
+      ]},
+      {icon:"⚠️", title:"융프라우 좌석 예약", list:[
+        "9월 융프라우 철도는 좌석 예약이 <b>의무</b>입니다.",
+        "<b>아이거글렛처 ↔ 융프라우요흐</b> 구간만 전날 미리 사전예약하면 돼요.",
+        "타고자 하는 시간에 맞춰 <b>전날 그린델발트 역</b>에서 시간 예약.",
+        "기차는 출발 <b>10분 전까지</b> 입장.",
+        "그린델발트 → 융프라우요흐 약 45~50분."
+      ], links:[{u:"https://www.jungfrau.co.kr/jungfrau/jung_view.asp?dsIdx=2230&dsType=MT&dsWriteDate=2025-7-6", label:"좌석 예약 방법 안내"}]},
+      {icon:"🌤️", title:"날씨 판단", list:[
+        "<b>MeteoSwiss</b> 앱을 받아 <b>Jungfraujoch</b> 지점을 추가해두고 전날 밤 확인하세요.",
+        "산 정상이 흐리면 저지대 플랜(라우터브루넨 · 베른)으로 전환."
+      ]},
+      {icon:"🧳", title:"이동 주의", list:[
+        "슈피츠 환승은 <b>3분</b>뿐 — 내리기 전 미리 짐 챙겨서 문 앞 대기, 놓치면 30분 뒤 차.",
+        "스위스 기차는 짐칸이 좁아서 짐을 시야 안에 두세요."
+      ]},
+      {icon:"📸", title:"테마 스팟 · 무료 vs 유료 전망대", list:[
+        "<b>바흐알프제 호수</b> (무료, 피르스트 리프트 요금만) — 산 반영샷, Day 8",
+        "<b>리펠제 호수</b> (체르마트, 고르너그라트 왕복권 필요) — 마테호른 반영샷, Day 10",
+        "<b>피르스트 클리프워크</b> (리프트 요금 포함) — 절벽 위 스릴 넘치는 전망대",
+        "<b>하르더쿨름</b> (인터라켄, 케이블카 별도) — 시간 남으면 융프라우 3봉 전체 조망",
+        "<b>장미공원</b> (베른, 완전 무료) — 구시가지 전체 조망, Day 10 옵션3"
+      ]},
+      {icon:"🧀", title:"놓치면 아쉬운 스위스 먹거리", list:[
+        "<b>퐁뒤 · 라클렛</b> — 그린델발트 산장 레스토랑에서 (Heubode 등)",
+        "<b>뢰스티</b> — 스위스식 감자전, 어디서나 무난",
+        "<b>스위스 초콜릿</b> — coop/Migros 마트가 관광지 상점보다 훨씬 저렴",
+        "<b>애플슈트루델</b> — 산 위 레스토랑 디저트로 자주 등장"
+      ]},
+      {icon:"☔", title:"비 오는 날 대안", list:[
+        "베른 — Day 10 옵션 3, 아케이드가 길어 날씨 영향 가장 적음",
+        "인터라켄 실내 — 카지노, 스파, 실내 쇼핑거리",
+        "벨베데레 수영장·스파 — 산 대신 온천으로 하루 회복"
+      ]}
+    ],
+    tables:[
+      {title:"🪂 패러글라이딩 비교 — 인터라켄 뷰 vs 그린델발트 피르스트 뷰",
+       head:["항목","인터라켄 Big Blue","그린델발트 피르스트 파노라믹"],
+       rows:[
+        ["업체","Paragliding Interlaken","Paragliding Jungfrau"],
+        ["이륙","베아텐베르크","피르스트"],
+        ["착륙","인터라켄","그린델발트"],
+        ["가격","<b>300,458원</b> (마이리얼트립)","CHF 220"],
+        ["사진·영상","CHF 40 별도","CHF 40 별도"],
+        ["실제 비행","10~20분","15~20분"],
+        ["전체 소요","약 1시간 30분","약 1시간 30분"],
+        ["풍경","호수(툰/브리엔츠) + 알프스","아이거 북벽 + 그린델발트 계곡"],
+        ["이동","그린델발트→인터라켄 35~40분 필요","피르스트 일정에서 바로 연결"],
+        ["일정상 추천","9/20 <b>15:30</b>","9/21 <b>13:00 전후</b>"]
+       ],
+       links:[
+        {u:"https://experiences.myrealtrip.com/products/3508832", label:"인터라켄 Big Blue 예약"},
+        {u:"https://www.paragliding-jungfrau.ch/wp/first-panoramic/?lang=ko", label:"피르스트 파노라믹 예약"}
+       ]},
+      {title:"🥾 트레킹 비교 — 아이거워크 vs 바흐알프제 호수",
+       note:"아이거워크는 그린델발트 패러글라이딩(안2) 선택 시 / 바흐알프제는 인터라켄 패러글라이딩(안1) 선택 시",
+       head:["항목","융프라우 아이거워크","바흐알프제 호수 왕복"],
+       rows:[
+        ["위치","아이거글렛처 ↔ 클라이네 샤이덱","피르스트 ↔ 바흐알프제"],
+        ["소요시간","약 1시간","약 1시간 50분"],
+        ["거리","약 2.5km","왕복 약 5~6km"],
+        ["난이도","쉬움","쉬움~보통"],
+        ["풍경 핵심","아이거 북벽","호수 + 산 반영"],
+        ["느낌","고산 산책","가벼운 하이킹"],
+        ["동선","융프라우요흐와 궁합 최고","피르스트와 궁합 최고"],
+        ["체력 부담","낮음","조금 더 있음"]
+       ]},
+      {title:"🎢 피르스트 액티비티",
+       head:["액티비티","구간","소요","느낌","가격"],
+       rows:[
+        ["피르스트 플라이어","피르스트 → 슈렉펠트","약 15분","집라인처럼 앉아서 날아 내려감, 최고 약 84km/h","CHF 35"],
+        ["피르스트 글라이더","슈렉펠트 ↔ 피르스트","약 15분","독수리 모양 장치에 엎드려 매달려 비행","CHF 35"],
+        ["마운틴카트","슈렉펠트 → 보르트","약 30분","알프스 비포장길을 카트로 내려감","CHF 25"],
+        ["트로티바이크","보르트 → 그린델발트","약 30분","자전거+킥보드 형태로 산길 하강","CHF 25"]
+       ]}
+    ]
+  },
+  it:{
+    flag:"🇮🇹", name:"이탈리아", short:"이탈리아", nights:"7박", dates:"9/24 – 10/1",
+    intro:"나폴리 → 소렌토 → 카프리 → 로마. 매일 이동수단이 바뀌는 7일이에요.",
+    orient:[
+      "🍞 <b>코페르토(coperto)</b> — 대부분 식당에 자릿세 개념의 코페르토(1인 €1.5~3)가 청구돼요. 바가지 아니라 정상 관행",
+      "🙅 <b>팁</b> — 필수 아니지만 만족스러웠으면 잔돈이나 5~10% 정도 남기는 경우 있음",
+      "🚻 <b>화장실</b> — 기차역은 유료(€1 내외)인 곳 많음, 카페 이용 후 이용이 자연스러움",
+      "💳 <b>카드 vs 현금</b> — 로마·나폴리 시내는 카드 대부분 가능, 소렌토·카프리·아말피 해안의 작은 가게는 <b>현금만</b> 받는 곳도 있어요",
+      "📅 <b>예약 문화</b> — 인기 맛집은 예약 앱(더포크/TheFork)이나 전화 예약이 흔함. 오픈런 문화도 많아서(Posides 등) 문 열기 전 도착이 일반적",
+      "🚦 <b>ZTL</b> — 로마·나폴리 등 대도시엔 차량 제한구역이 있어요. 렌터카 내비 ZTL 회피 설정 꼭 확인"
+    ],
+    cards:[
+      {icon:"🚗", title:"렌트카 — 픽업할 때", list:[
+        "계약서 / 보험 / 연료정책 확인",
+        "외관 · 휠 · 유리 <b>영상 촬영</b> (분쟁 대비)",
+        "<b>홀짝제</b> 대비 홀수 번호판 요청 — 다만 지역·날짜마다 규정이 달라서, <b>9/26 기준으로 어떤 번호판이 안전한지 직원에게 직접 확인</b>하세요.",
+        "일정: 나폴리 중앙역 픽업 (9/25 13:00) → 로마 테르미니 반납 (9/28 17:00)"
+      ]},
+      {icon:"🔑", title:"렌트카 — 반납할 때", list:[
+        "차량 전체 외관 영상","휠 / 범퍼 사진","주행거리","연료 게이지","반납 장소 사진",
+        "직원 확인 후 <b>반납 확인서 / 이메일</b> 받아두기",
+        "로마 진입 시 내비게이션 <b>ZTL 회피</b> 설정 필수",
+        "주유 조건이 Full-to-Full이면 로마 외곽에서 마지막 주유"
+      ]},
+      {icon:"🚦", title:"차량 홀짝제란?", list:[
+        "일부 이탈리아 지역에서 <b>번호판 끝자리</b>가 홀수/짝수인지에 따라 통행을 제한하는 제도예요 — 다만 지역·시기마다 실제 적용 여부가 달라요.",
+        "9/25 렌트카 픽업 때 직원에게 <b>우리 차가 9/26에 해당되는지</b> 확인하고, <b>안 된다고 하면 이 규정은 신경 쓰지 않아도 돼요.</b>",
+        "해당된다고 하면 그 시간대만 피해서 이동하면 되고, 아니라면 이른 출발은 그냥 교통·주차 혼잡을 피하기 위한 선택일 뿐이에요."
+      ]},
+      {icon:"🛡️", title:"안전 — 나폴리", list:[
+        "유럽에서도 <b>소매치기·가방 날치기로 유명한 곳</b>, 특히 <b>가리발디 광장 / 중앙역 주변</b>.",
+        "가방은 어깨에 걸지 말고 <b>몸 앞쪽으로</b>.",
+        "스쿠터 날치기가 흔하니 <b>차도 쪽 팔에 가방을 걸지 않기</b>.",
+        "스파카나폴리 골목에서도 크로스백 지퍼를 앞으로 돌려서."
+      ]},
+      {icon:"🛡️", title:"안전 — 로마", list:[
+        "인파 많은 곳(콜로세움/트레비/스페인계단)에서 <b>가방 앞으로</b>, 지퍼 잠그기, 휴대폰 손목 스트랩 추천.",
+        "레스토랑/카페에서 <b>의자에 가방 걸어두지 않기</b> (바닥도 X).",
+        "이동/쇼핑이 많은 날은 택시/우버로 체력 아끼기.",
+        "교통권: 시내 이동이 잦으면 72시간권도 고려 가능. 다만 '도보 + 필요할 때만 메트로/택시'가 보통 가장 편해요."
+      ]},
+      {icon:"⛴️", title:"페리 & 주차", list:[
+        "소렌토 ↔ 카프리 약 25~30분 · 큰 짐은 편도 <b>€5 내외</b> 별도 (NLG 기준)",
+        "예약사이트에서 짐 추가가 안 되면 항구에서 별도 짐표 구매",
+        "카프리 도착 후 캐리어는 <b>Marina Grande 유료 짐 보관소</b>에 — 보트투어에 큰 짐 반입 불가"
+      ]},
+      {icon:"🍋", title:"놓치면 아쉬운 이탈리아 남부 먹거리·특산품", list:[
+        "<b>레몬첼로</b> — 소렌토·카프리 지역 레몬으로 만든 리큐르, 식후주로",
+        "<b>모짜렐라 디 부팔라</b> — 물소젖 모짜렐라, 나폴리·소렌토 지역 특산",
+        "<b>카프리 향수</b> — Carthusia 등 카프리섬 로컬 브랜드",
+        "<b>레몬 그라니타</b> — 아말피 해안 필수 디저트, 더위 식히기 좋음",
+        "<b>스폴리아텔레</b> — 나폴리식 겹겹 페이스트리 (Day 12 Sfogliatelle Attanasio)"
+      ]},
+      {icon:"📸", title:"인생샷 포인트", list:[
+        "포지타노 전망대 — 위에서 아래로 내려오며 파스텔톤 마을 전경 (Day 13 오전)",
+        "아말피 해안도로(SS163) 드라이브 중 차 세우고 절벽뷰 촬영",
+        "카프리 파라글리오니 — 몬테 솔라로 정상에서 바다 위 바위 기둥 조망 (Day 14)",
+        "로마 스페인 계단 · 핀초 언덕 일몰 (Day 17)",
+        "피오르도 디 푸로레 다리 위 — 절벽 사이 작은 해변 (Day 13)"
+      ]},
+      {icon:"☔", title:"비 오는 날 대안", list:[
+        "바티칸 박물관 — 이미 일정에 있음, 우천에도 상관없이 실내",
+        "나폴리 지하도시 (Napoli Sotterranea) — 지하 로마 유적 투어",
+        "로마 보르게세 미술관 — 사전 예약 필요, 실내 명화 감상"
+      ]}
+    ]
+  }
+};
+
+const MAPLIST = {
+  fr:"https://maps.app.goo.gl/L9XHQSS3AJovYHU2A",
+  ch:"https://maps.app.goo.gl/T7GqtdsApdMzo16Q6",
+  it:"https://maps.app.goo.gl/z3cyr8YntSGf6MPk7"
+};
+
+const PLACES = {
+  fr:[
+    {city:"생제르망 · 6구", items:[
+      {n:"Brasserie des Prés", q:"Brasserie des Prés Paris", d:"어니언수프·뵈프 부르기뇽 · 자정까지", day:1},
+      {n:"카페 두 마고", q:"Les Deux Magots Paris", d:"생제르망 대표 카페", day:1},
+      {n:"카페 드 플뢰르", q:"Café de Flore Paris", d:"두 마고 바로 옆", day:1},
+      {n:"Maison Mulot", q:"Maison Mulot Paris", d:"피크닉용 키슈·샌드위치·크루아상", day:2}
+    ]},
+    {city:"마레 · 3·4구", items:[
+      {n:"L'As du Fallafel", q:"L'As du Fallafel Paris", d:"팔라펠 · ⚠️ 금요일 11:00~15:30만", day:5},
+      {n:"Le Marais Restaurant", q:"Le Marais Restaurant Rue de Turbigo Paris", d:"기념일 서프라이즈 서비스"},
+      {n:"Partisan Café Artisanal", q:"Partisan Café Artisanal Paris", d:"스페셜티 커피"},
+      {n:"Mao dumpling bar", q:"Mao dumpling bar Paris", d:"중식·딤섬 · 월요일 휴무"}
+    ]},
+    {city:"몽마르뜨 · 9·18구", items:[
+      {n:"Crêperie de Montmartre", q:"Creperie de Montmartre Rue Dancourt Paris", d:"수제 크레페", day:2},
+      {n:"Leonie Bakery", q:"Leonie Bakery Paris", d:"아몬드 크루아상·키슈", day:2},
+      {n:"Square Jehan Rictus", q:"Square Jehan Rictus Paris", d:"🌿 사랑해벽", day:2}
+    ]},
+    {city:"에펠탑 · 트로카데로 · 7구", items:[
+      {n:"Girafe", q:"Girafe Restaurant Paris", d:"에펠탑 정면 뷰 파인다이닝 · 2주 전 예약", day:5},
+      {n:"Café du Trocadéro", u:"https://maps.app.goo.gl/ofvequvnqhXMm3tT8", d:"에펠탑 정면 테라스 · 02시까지", day:5},
+      {n:"Carette", u:"https://maps.app.goo.gl/GepwGaBYzomCR6EM8", d:"트로카데로 티살롱 · 에펠탑 뷰", day:5},
+      {n:"Constant", u:"https://maps.app.goo.gl/rpJMk2kn9Z9iu8td6", d:"에펠탑 근처", day:5},
+      {n:"Noir", u:"https://maps.app.goo.gl/fso347DzrojPkN59A", d:"체인 카페 · 호지차라떼", day:5},
+      {n:"Le Café de Mars", u:"https://maps.app.goo.gl/S4Z1iiHQNJCEFsxY6", d:"조용한 골목 로컬 비스트로", day:5},
+      {n:"Les Cocottes", q:"Les Cocottes Saint-Dominique Paris", d:"캐주얼 비스트로", day:5},
+      {n:"Francette", q:"Francette Paris", d:"센강 보트 레스토랑", day:5},
+      {n:"L'Howea", q:"L'Howea Paris", d:"🌿 꽃집 — 에펠탑 뷰 포토스팟"}
+    ]},
+    {city:"오페라 · 1·2·8·9구", items:[
+      {n:"Café de la Paix", u:"https://maps.app.goo.gl/dYf2rjJShBtVQ71PA", d:"오페라 광장 앞 · 예약금 120유로", day:4},
+      {n:"Les Bacchantes", u:"https://maps.app.goo.gl/9sh8s1ASSKRtwMXA9", d:"현지인 맛집 · 예약 필수", day:4},
+      {n:"Hakata Choten", u:"https://maps.app.goo.gl/SyptyKMqme5UocNXA", d:"라멘", day:4},
+      {n:"우동·소바 맛집", u:"https://maps.app.goo.gl/eg3p8CYPc143z6udA", d:"오페라 근처", day:4},
+      {n:"La Petite Bleue", q:"La Petite Bleue Paris", d:"브런치 카페", day:4},
+      {n:"Azur Café", q:"Azur Cafe Paris", d:"브런치 · 샹젤리제 근처"},
+      {n:"Dessirier", q:"Dessirier Paris", d:"고급 해산물 · 17구"},
+      {n:"BAMBINO", q:"BAMBINO restaurant Paris", d:"와인바 · 11구"}
+    ]},
+    {city:"바토무슈 · 알마", items:[
+      {n:"Les Romantiques", q:"Les Romantiques Place de l'Alma Paris", d:"승선장 앞 · 새벽 2시까지 · 오리콩피", day:2}
+    ]}
+  ],
+  ch:[
+    {city:"그린델발트", items:[
+      {n:"Stallbeizli Heubode", u:"https://maps.app.goo.gl/VoJW8TQg8kttmWdN8", d:"마을 전망 농가 퐁뒤 · ⚠️ 월·화 휴무", day:6},
+      {n:"Burger Station", u:"https://maps.app.goo.gl/zHxJnkg7aU6VMWGG8", d:"푸드트럭 버거 · 저렴", day:8},
+      {n:"coop 그린델발트", q:"Coop Grindelwald", d:"🛒 장보기 · 점심 도시락"},
+      {n:"Belvedere Hotel 수영장", q:"Belvedere Swiss Quality Hotel Grindelwald", d:"♨️ 20시 이후 CHF 22 (사우나 포함 32)", day:8}
+    ]},
+    {city:"인터라켄", items:[
+      {n:"아레식당", u:"https://maps.app.goo.gl/4x472aKPr32vsbrm8", d:"인터라켄 한식당 맛집", day:7},
+      {n:"Hüsi Bierhaus", u:"https://maps.app.goo.gl/nXT2YCys7FpvDrNC9", d:"폭립·슈니첼 · 한국인 유명 펍", day:7},
+      {n:"Little Thai", u:"https://maps.app.goo.gl/U3ugwtSHL5Bx8EQw8", d:"태국음식점 맛집", day:7},
+      {n:"Asllani's Corner", u:"https://maps.app.goo.gl/T6KGHxJGGgaDkKU28", d:"수제버거 맛집", day:7},
+      {n:"Interlaken Pizza", u:"https://maps.app.goo.gl/DTeoRQBdjhLPwLvt7", d:"피자, 케밥 판매", day:7}
+    ]},
+    {city:"외시넨 · 칸더슈테크", items:[
+      {n:"Berghotel Oeschinensee", q:"Berghotel Oeschinensee restaurant", d:"호숫가 바로 앞 · 뷰 최고", day:9},
+      {n:"Restaurant Bergstübli", q:"Bergstubli Oeschinen Kandersteg", d:"곤돌라 상부역 근처 · 가볍게", day:9},
+      {n:"Chalet Arva", q:"Chalet Arva Oeschinensee", d:"애플슈트루델 · ⚠️ 화요일 휴무"}
+    ]}
+  ],
+  it:[
+    {city:"나폴리", items:[
+      {n:"L'Antica Pizzeria da Michele", u:"https://maps.app.goo.gl/Mdpor4iHHx7bSDtt9", d:"나폴리 3대 피자 · 10:30 오픈런", day:12},
+      {n:"Antica Pizza Fritta da Zia Esterina Sorbillo", u:"https://maps.app.goo.gl/JVJaoujpkWPzSJBq6", d:"튀김피자 · 스파카나폴리", day:12},
+      {n:"Chalet Ciro (중앙역)", u:"https://maps.app.goo.gl/NrLT2WjNUV4pp7678", d:"그라파(감자도넛)+커피", day:12},
+      {n:"Chalet Ciro 1952 (메르젤리나)", q:"Chalet Ciro 1952 Mergellina Napoli", d:"그라파 본점"},
+      {n:"Sfogliatelle Attanasio", u:"https://maps.app.goo.gl/V5jYyhHRyeMPNF13A", d:"나폴리 대표 페이스트리", day:12},
+      {n:"O' Sole Mio Pizza & More", q:"O Sole Mio Pizza Piazza Garibaldi Napoli", d:"호텔 도보 2~3분", day:11},
+      {n:"10 Diego Vitagliano (Bagnoli)", q:"10 Diego Vitagliano Pizzeria Bagnoli", d:"나폴리 3대 피자"},
+      {n:"10 Diego Vitagliano (Santa Lucia)", q:"10 Diego Vitagliano Pizzeria Santa Lucia Napoli", d:"육식맨 추천"},
+      {n:"Pizzeria passionamij", q:"Pizzeria passionamij Napoli", d:"현지 피자 맛집"},
+      {n:"Il Ruttino", q:"Il Ruttino Napoli", d:"나폴리 피자"},
+      {n:"Gran Caffè Gambrinus", q:"Gran Caffe Gambrinus Napoli", d:"헤밍웨이 단골 · 스트라짜빠토"},
+      {n:"Pescheria Mattiucci", q:"Pescheria Mattiucci Napoli", d:"해산물"},
+      {n:"Mr.Clood Bistrot", q:"Mr Clood Bistrot Napoli", d:"나폴리맛피아 추천 현지맛집"},
+      {n:"Ristorante Senti Profumo", q:"Ristorante Senti Profumo Napoli", d:"중식"},
+      {n:"Il Gelato Mennella", q:"Il Gelato Mennella Napoli", d:"젤라또"}
+    ]},
+    {city:"소렌토", items:[
+      {n:"Bagni Delfino", u:"https://maps.app.goo.gl/jtfT1tVFETiCBTcy9", d:"Marina Grande · 석양+해산물 · 예약", day:12},
+      {n:"Il Gozzo Sorrento", u:"https://maps.app.goo.gl/NKprAmUqWoP4DcWP6", d:"항구 뷰", day:12},
+      {n:"Naima Restaurant", u:"https://maps.app.goo.gl/CFACPNW7DbYgwGyx5", d:"평점 최상위", day:12},
+      {n:"Ndrè", u:"https://maps.app.goo.gl/zWhkG74p5GW1nDDc9", d:"16석 파인다이닝 · 더포크 예약", day:12},
+      {n:"La Cantinaccia del Popolo", q:"La Cantinaccia del Popolo Sorrento", d:"현지인 줄서는 집 · 대기 30~45분", day:13},
+      {n:"Porta Marina Seafood", q:"Porta Marina Seafood Sorrento", d:"문어구이·홍합조개찜·모듬튀김", day:13},
+      {n:"AZZ! Italian Tavern", q:"AZZ Italian Tavern Sorrento", d:"라자냐 맛집", day:13},
+      {n:"Nalù Trattoria italiana", q:"Nalu Trattoria Sorrento", d:"현지인 웨이팅 파스타 맛집"},
+      {n:"Ristorante Pizzeria Tasso", q:"Ristorante Pizzeria Tasso Sorrento", d:"피자 · 글루텐프리 대응"},
+      {n:"SpizzichiAMO", q:"SpizzichiAMO Sorrento", d:"샌드위치·포카치아"},
+      {n:"Raki", q:"Raki gelato Sorrento", d:"레몬 젤라또 · stuffed lemon"},
+      {n:"Bagni Regina Giovanna", q:"Bagni Regina Giovanna Sorrento", d:"🏊 로마유적 자연풀 수영"},
+      {n:"the Pignatella Beach", q:"Pignatella Beach Sorrento", d:"🏊 바위+모래 해변 · 입장료"},
+      {n:"Spiaggia La Marinella", q:"Spiaggia La Marinella Sorrento", d:"🏊 시설형 해변 · 선베드·샤워", day:12},
+      {n:"Marina Piccola", q:"Marina Piccola Sorrento", d:"🏖️ 소렌토 메인 해변"},
+      {n:"Sorrento Municipal Park", q:"Villa Comunale Sorrento", d:"🌅 일몰 명당", day:12},
+      {n:"비토리아 광장", q:"Piazza Vittoria Sorrento", d:"🌅 일몰 구경", day:12},
+      {n:"Garage Marina Piccola", q:"Garage Marina Piccola Sorrento", d:"🅿️ 카프리 전 1박 주차", day:14}
+    ]},
+    {city:"포지타노 · 아말피 해안", items:[
+      {n:"Posides", q:"Posides Positano", d:"가족 운영 · 예약 불가 오픈런", day:13},
+      {n:"Da Gabrisa", u:"https://maps.app.goo.gl/BH749b4PkZZgLfPZ6", d:"파노라마 뷰 · positanese 파스타", day:13},
+      {n:"까자 에 보떼가", q:"Casa e Bottega Positano", d:"가벼운 브런치", day:13},
+      {n:"Cafe Positano", q:"Cafe Positano", d:"테라스 뷰"},
+      {n:"Calajanara", u:"https://maps.app.goo.gl/AxKGXKoRYkdRWB576", d:"Conca dei Marini · 절벽뷰 파스타", day:13},
+      {n:"Furore Fjord", q:"Fiordo di Furore", d:"🏊 피오르드 절벽 수영", day:13},
+      {n:"포지타노 주차장", u:"https://maps.app.goo.gl/w988fD5i1rokaCC66", d:"🅿️ Di Gennaro 사전예약 권장", day:13}
+    ]},
+    {city:"카프리", items:[
+      {n:"Pizza e Pasta", u:"https://maps.app.goo.gl/4Y5hzDbVrfeBQt4KA", d:"아나카프리 피자 맛집", day:14},
+      {n:"Al Grottino", u:"https://maps.app.goo.gl/KfJbjwz7H4PLDp7N7", d:"가족 운영 · 레몬 파스타", day:14},
+      {n:"Pulalli", q:"Pulalli Capri", d:"피아체타 시계탑 위 · 전망", day:14},
+      {n:"Buonocore", q:"Buonocore Capri gelato", d:"카프리 젤라또 맛집", day:14},
+      {n:"Alimenta Bistrot Anacapri", q:"Alimenta Bistrot Anacapri Villa Rosa", d:"아나카프리 비스트로"},
+      {n:"La Zagara", q:"La Zagara Anacapri", d:"레몬 가든 안 식사"}
+    ]},
+    {city:"로마 — 판테온 · 트레비", items:[
+      {n:"La Campana", u:"https://maps.app.goo.gl/X29RnXVDL6Uf3DYW9", d:"로마 최고령 · 호박꽃튀김 · 전화예약만 · 월휴무", day:15},
+      {n:"Trattoria Antonio al Pantheon", u:"https://maps.app.goo.gl/CitCJQdoyTg1vgtr8", d:"판테온 근처 맛집", day:17},
+      {n:"La Casa del Caffè Tazza d'Oro", u:"https://maps.app.goo.gl/2fh7nkkhvukHhFSh9", d:"로마 3대 커피", day:15},
+      {n:"Gelateria Della Papessa", u:"https://maps.app.goo.gl/UfjwkGQPLq1YJzmy9", d:"젤라또 · 트레비~스페인계단", day:15},
+      {n:"Two Sizes", u:"https://maps.app.goo.gl/rQr7c9JyFwkZqSVY6", d:"3대 티라미수", day:17},
+      {n:"Mr. 100 Tiramisù", u:"https://maps.app.goo.gl/6B1PTkkY9AQSThwe8", d:"3대 티라미수", day:17},
+      {n:"Nest — Handmade Chinese Dumpling", u:"https://maps.app.goo.gl/6u3H8TnUCrdci2H29", d:"샤오롱바오", day:15},
+      {n:"Shiroya", u:"https://maps.app.goo.gl/qjefUNQGXLoTaKXL7", d:"미슐랭 · 스파이시 라멘·연어롤", day:15},
+      {n:"Pastevere", q:"Pastevere Roma", d:"수제 파스타 · 화요일 휴무"},
+      {n:"토라 스시", q:"Tora Sushi Roma", d:"일식"},
+      {n:"53 Untitled", q:"53 Untitled Roma", d:"파인다이닝"}
+    ]},
+    {city:"로마 — 스페인계단 · 포폴로", items:[
+      {n:"Life 식당", u:"https://maps.app.goo.gl/cRMf2N9HShqYi2ao7", d:"스페인광장 근처 지중해식 · 예약", day:17},
+      {n:"Pompi", u:"https://maps.app.goo.gl/Vsa8HX5Sh9iyyCck8", d:"티라미수 원조", day:17},
+      {n:"Terrazza e bar Rinascente", u:"https://maps.app.goo.gl/paP72xxfZ15L8ngV8", d:"루프탑 바", day:16},
+      {n:"안티코 카페 그레코", q:"Antico Caffe Greco Roma", d:"로마 3대 카페 · ⚠️ 임시휴업 확인"}
+    ]},
+    {city:"로마 — 바티칸 · 프라티", items:[
+      {n:"La Soffitta Renovatio", u:"https://maps.app.goo.gl/tqKA9F6hV8orrkp8A", d:"성벽 앞 도보 2분 · 피자·라자냐", day:16},
+      {n:"Vinsanto Vino & Cucina", u:"https://maps.app.goo.gl/LUkhwXkMHMpuoJgQ7", d:"연어 스테이크", day:16},
+      {n:"올드브릿지 젤라또", u:"https://maps.app.goo.gl/RVM5voLRTs2f31u97", d:"바티칸 근처 젤라또", day:16}
+    ]},
+    {city:"로마 — 쇼핑", items:[
+      {n:"CONAD (Via Buonarroti)", q:"Conad Via Buonarroti Roma", d:"🛒 마트 기념품 쇼핑", day:17}
+    ]}
+  ]
+};
+
+/* ===== 여행 경로 지도용 좌표 데이터 (스타일라이즈드 SVG, 실제 위경도 아님) ===== */
+const MAPDATA = {
+  viewBox: "0 0 340 460",
+  regions: [
+    { c:"fr", name:"프랑스", label:"파리", cx:120, cy:70, r:46,
+      cities:[{name:"파리", x:120, y:70}] },
+    { c:"ch", name:"스위스", label:"그린델발트", cx:210, cy:190, r:40,
+      cities:[{name:"그린델발트", x:210, y:190}] },
+    { c:"it", name:"이탈리아", label:"나폴리·소렌토·카프리·로마", cx:150, cy:350, r:78,
+      cities:[
+        {name:"로마", x:110, y:290},
+        {name:"나폴리", x:165, y:345},
+        {name:"소렌토", x:178, y:372},
+        {name:"카프리", x:158, y:395}
+      ]}
+  ],
+  route:[ [120,70],[210,190],[110,290],[165,345],[178,372],[158,395] ],
+  legs:[
+    {icon:"🚆", x:168, y:128, label:"기차 4번 환승"},
+    {icon:"✈️", x:158, y:245, label:"경유 비행"},
+    {icon:"🚗", x:145, y:318, label:"렌터카"},
+    {icon:"⛴️", x:172, y:360, label:"페리"},
+    {icon:"⛴️", x:166, y:384, label:"페리"}
+  ]
+};
+
+/* ===== 공통 비상 연락처 ===== */
+const EMERGENCY = {
+  title:"🆘 공통 비상 연락처 (유럽 어디서나)",
+  items:[
+    "<b>112</b> — EU 공통 긴급번호 (경찰·화재·구급 모두 연결)",
+    "여권 분실 시 → 가까운 주재 대한민국 대사관/영사관",
+    "여행자보험 가입 확인서 · 긴급연락처는 미리 캡처해두기",
+    "카드 분실 시 카드사 해외 분실신고 번호도 미리 저장해두면 좋아요"
+  ]
+};
+
+/* ===== 각 나라 실제 지도 (OpenStreetMap 임베드 — API 키 불필요, 항상 안정적으로 표시) ===== */
+const COUNTRY_MAP_EMBED = {
+  fr:"https://www.openstreetmap.org/export/embed.html?bbox=2.2450%2C48.8350%2C2.3650%2C48.8950&layer=mapnik&marker=48.8584%2C2.2945",
+  ch:"https://www.openstreetmap.org/export/embed.html?bbox=7.9200%2C46.5700%2C8.1600%2C46.6800&layer=mapnik&marker=46.6244%2C8.0414",
+  it:"https://www.openstreetmap.org/export/embed.html?bbox=12.3000%2C40.3500%2C14.7000%2C41.9500&layer=mapnik&marker=40.6263%2C14.3757"
+};
+
+/* ===== 나라별 언어로 된 검색어 (내 주변 찾기용) ===== */
+const NEARBY_TERMS = {
+  fr:{toilet:"toilettes publiques", pharmacy:"pharmacie", atm:"distributeur de billets"},
+  ch:{toilet:"öffentliche toilette", pharmacy:"apotheke", atm:"geldautomat"},
+  it:{toilet:"bagno pubblico", pharmacy:"farmacia", atm:"bancomat"}
+};
+
+/* ===== 도구 탭 — 날씨 바로가기용 도시 ===== */
+const WEATHER_CITIES = [
+  {c:"fr", n:"파리"},
+  {c:"ch", n:"그린델발트"}, {c:"ch", n:"인터라켄"},
+  {c:"it", n:"나폴리"}, {c:"it", n:"소렌토"}, {c:"it", n:"포지타노"}, {c:"it", n:"카프리"}, {c:"it", n:"로마"}
+];
+
+/* ===== 도구 탭 — 짐 체크리스트 ===== */
+const PACKING = [
+  {g:"공통 (전체 국가)", items:[
+    "여권 · 여권 사본(사진으로도 저장)",
+    "국제운전면허증 + 한국 면허증 원본 (이탈리아 렌트카용)",
+    "여행자보험 가입확인서",
+    "유럽 유심/eSIM",
+    "보조배터리 · 멀티어댑터",
+    "상비약(진통제·소화제·밴드)",
+    "편한 신발 — 전체 일정 도보량이 많아요",
+    "선크림 — 스위스 고산 자외선 + 이탈리아 남부 땡볕, 둘 다 필요",
+    "수영복 · 아쿠아슈즈 — 벨베데레 수영장(스위스) + 소렌토·포지타노·푸로레·카프리(이탈리아), 총 6번 이상 물놀이 있어요"
+  ]},
+  {g:"🇫🇷 파리", items:[
+    "나비고 주간권용 증명사진 1매 — 주간권 사려면 필요, 1회권만 쓸 거면 생략 가능",
+    "돗자리 — 피크닉이 3번(뤽상부르 · 튈르리 · 마르스광장) 있어요",
+    "가벼운 크로스백 — 소매치기 대비, 지퍼 앞으로",
+    "동전 약간 — 유료 화장실"
+  ]},
+  {g:"🇨🇭 스위스", items:[
+    "방수 재킷 · 방풍 겉옷 — 산 날씨는 갑자기 바뀔 수 있어요",
+    "운동화 또는 트레킹화 — 아이거워크·바흐알프제 트레킹 대비"
+  ]},
+  {g:"🇮🇹 이탈리아", items:[
+    "여름용 타월 — 공용 해변엔 비치타월 비치 안 된 곳 많아요",
+    "여름 원피스 · 린넨 옷 — 9월 말도 남부는 덥고 습해요",
+    "모자",
+    "현금 — 소렌토·포지타노·카프리 소도시는 카드 안 되는 가게도 있어요"
+  ]}
+];
+const PARKING = [
+  {area:"소렌토", name:"Garage Marina Piccola", note:"카프리 가기 전 1박 주차 · 약 60~75유로 · 'Capri one night' 고지", day:14, q:"Garage Marina Piccola Sorrento"},
+  {area:"소렌토", name:"Garage il Faro", note:"Marina Piccola 만석 시 대안", q:"Garage il Faro Sorrento"},
+  {area:"포지타노", name:"Parcheggio Di Gennaro", note:"사전예약 권장 (parkingpositano.com)", day:13, q:"Parcheggio Di Gennaro Positano"},
+  {area:"포지타노", name:"Parcheggio Mandara", note:"공영주차장 · 9시 이후 만차 흔함, 이른 도착 필수", day:13, q:"Parcheggio Mandara Positano"},
+  {area:"아말피", name:"Parcheggio Luna Rossa", note:"차로 직접 갈 경우 (일정상 페리 권장이라 우선순위 낮음)", q:"Parcheggio Luna Rossa Amalfi"},
+  {area:"나폴리", name:"Parcheggio Brin", note:"중앙역 인근 렌트카 픽업 전후 단기 주차", q:"Parcheggio Brin Napoli"}
+];
+const RESERVATIONS = [
+  {day:4,  t:"Café de la Paix 예약", n:"예약금 120유로 선결제"},
+  {day:5,  t:"Girafe 예약 (원하면)", n:"2주 전 예약 오픈, 놓치기 쉬움"},
+  {day:6,  t:"Stallbeizli Heubode 예약", n:"월·화 휴무 — 예약 권장"},
+  {day:12, t:"Ndrè 예약 (원하면)", n:"더포크 앱으로 예약 필수"},
+  {day:13, t:"Posides 오픈런 계획", n:"예약 불가, 11:30~11:45 도착"},
+  {day:15, t:"La Campana 전화 예약 (원하면)", n:"월요일 휴무"}
+];
+
+(function(){
+  const root=document.getElementById('root');
+  let mode='map', cur=1, guideC='fr', eatC='fr';
+  const CN={fr:'프랑스',ch:'스위스',it:'이탈리아'};
+  const PERIODS=['오전','오전~점심','오후','저녁'];
+  const PICON={'오전':'☀','오전~점심':'🌤','오후':'🌤','저녁':'🌙'};
+  const ICONRE=/🏊|🏖️|🌅|🅿️|🛒|🌿|♨️/;
+  const ALL=DAYS.concat(DAYS2);
+
+  const gmap=q=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);
+  const linkOf=p=>p.u?p.u:(p.q?gmap(p.q):null);
+  const dayOf=n=>ALL.find(d=>d.n===n);
+
+  /* ---------- ICS calendar ---------- */
+  function dateOf(n){
+    const d=dayOf(n); if(!d) return null;
+    const [m,day]=d.date.split('/').map(Number);
+    return new Date(2026, m-1, day);
+  }
+  function fmtICS(dt){
+    const y=dt.getFullYear(), m=String(dt.getMonth()+1).padStart(2,'0'), d=String(dt.getDate()).padStart(2,'0');
+    return `${y}${m}${d}`;
+  }
+  function escICS(s){ return String(s).replace(/[\\;,]/g,c=>'\\'+c); }
+  function buildICS(events){
+    let body='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Honeymoon App//KR\r\nCALSCALE:GREGORIAN\r\n';
+    events.forEach((e,i)=>{
+      const start=dateOf(e.day); if(!start) return;
+      const end=new Date(start); end.setDate(end.getDate()+1);
+      body+='BEGIN:VEVENT\r\n';
+      body+=`UID:honeymoon-${e.day}-${i}-${Date.now()}@app\r\n`;
+      body+=`DTSTART;VALUE=DATE:${fmtICS(start)}\r\n`;
+      body+=`DTEND;VALUE=DATE:${fmtICS(end)}\r\n`;
+      body+=`SUMMARY:🔔 ${escICS(e.t)}\r\n`;
+      body+=`DESCRIPTION:${escICS(e.n||'')}\r\n`;
+      body+='BEGIN:VALARM\r\nTRIGGER:-P1D\r\nACTION:DISPLAY\r\nDESCRIPTION:예약 확인 알림\r\nEND:VALARM\r\n';
+      body+='END:VEVENT\r\n';
+    });
+    body+='END:VCALENDAR\r\n';
+    return body;
+  }
+  function downloadICS(filename, events){
+    const blob=new Blob([buildICS(events)], {type:'text/calendar;charset=utf-8'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a'); a.href=url; a.download=filename;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(()=>URL.revokeObjectURL(url),1500);
+  }
+
+  /* ---------- hero ---------- */
+  function hero(){
+    const segs=ALL.map(d=>`<div class="seg ${d.country} ${d.n===cur&&mode==='day'?'on':''}" data-goto="${d.n}" title="Day ${d.n} · ${d.date} ${d.city}">${d.n}</div>`).join('');
+    return `<div class="hero">
+      <div class="kicker">Honeymoon · 17 nights 18 days</div>
+      <h1>${TRIP.title}</h1>
+      <div class="dates">${TRIP.sub}</div>
+      <div class="tripbar">${segs}</div>
+      <div class="tripbar-legend">
+        <span><i style="background:var(--fr)"></i>파리 5박</span>
+        <span><i style="background:var(--ch)"></i>그린델발트 5박</span>
+        <span><i style="background:var(--it)"></i>이탈리아 7박</span>
+      </div></div>`;
+  }
+
+  function modes(){
+    const M=[['map','지도'],['day','일정'],['overview','한눈에'],['eat','맛집'],['guide','나라별 정보'],['tools','도구']];
+    return `<div class="modes">`+M.map(m=>`<div class="mode ${mode===m[0]?'on':''}" data-mode="${m[0]}">${m[1]}</div>`).join('')+`</div>`;
+  }
+
+  function rail(){
+    return `<div class="rail-wrap"><div class="rail" id="rail">`+ALL.map(d=>`
+      <div class="chip ${d.country} ${d.n===cur?'on':''}" data-goto="${d.n}">
+        <div class="cd">DAY</div><div class="cn">${d.n}</div><div class="cdate">${d.date}</div>
+      </div>`).join('')+`</div></div>`;
+  }
+
+  /* ---------- MAP (landing) ---------- */
+  function mapPanel(){
+    const M=MAPDATA;
+    let svg=`<svg class="svgmap" viewBox="${M.viewBox}" xmlns="http://www.w3.org/2000/svg">`;
+    // route line through region centers
+    svg+=`<path class="routeline" d="M ${M.regions.map(r=>r.cx+' '+r.cy).join(' L ')}"/>`;
+    // mini line within italy connecting its cities
+    const itCities=M.regions.find(r=>r.c==='it').cities;
+    svg+=`<path class="miniline" d="M ${itCities.map(c=>c.x+' '+c.y).join(' L ')}"/>`;
+    // leg icons
+    M.legs.forEach(l=>{ svg+=`<text class="legicon" x="${l.x}" y="${l.y}" text-anchor="middle">${l.icon}</text>`; });
+    // region blobs
+    M.regions.forEach(r=>{
+      svg+=`<g class="blob ${r.c}" data-goto-guide="${r.c}">
+        <circle class="core" cx="${r.cx}" cy="${r.cy}" r="${r.r}" opacity="0.16"/>
+        <circle class="core" cx="${r.cx}" cy="${r.cy}" r="${Math.round(r.r*0.42)}" opacity="0.95"/>
+        <text class="rlabel" x="${r.cx}" y="${r.cy+4}" text-anchor="middle">${r.name}</text>
+      </g>`;
+      r.cities.forEach(c=>{
+        svg+=`<circle class="cdot ${r.c}" cx="${c.x}" cy="${c.y}" r="4"/>`;
+        svg+=`<text class="clabel" x="${c.x+8}" y="${c.y+3}">${c.name}</text>`;
+      });
+    });
+    svg+=`</svg>`;
+
+    return `<div class="mapwrap">
+      <div class="mapintro"><h2>${TRIP.title}의 여정</h2><p>${TRIP.sub}</p></div>
+      ${svg}
+      <div class="maplegend">
+        <span><i style="background:var(--fr)"></i>파리 5박</span>
+        <span><i style="background:var(--ch)"></i>그린델발트 5박</span>
+        <span><i style="background:var(--it)"></i>나폴리·소렌토·카프리·로마 7박</span>
+      </div>
+      <div class="maptap">지역을 탭하면 그 나라 정보로 이동해요</div>
+
+      <div class="sectitle" style="margin-top:26px;">가기 전에 알아두면 편한 것</div>
+      <div class="orientgrid" style="grid-template-columns:1fr;">
+        <div class="orientcard">✈️ 처음 유럽 세 나라를 한 번에 도는 여행이라, 나라가 바뀔 때마다 <b>팁 문화·화장실·카드 사용</b> 관행이 달라요. 각 나라 탭 상단의 "가기 전에 알아두면 편한 것"을 국경 넘기 전에 한 번씩 읽어보세요.</div>
+      </div>
+      ${emergBox()}
+    </div>`;
+  }
+
+  function emergBox(){
+    return `<div class="emerg"><h4>${EMERGENCY.title}</h4><ul>${EMERGENCY.items.map(i=>`<li>${i}</li>`).join('')}</ul></div>`;
+  }
+
+  /* ---------- reservation block ---------- */
+  function resvBlock(day){
+    const items=RESERVATIONS.filter(r=>r.day===day);
+    if(!items.length) return '';
+    return `<div class="resvbox">
+      <h5>🔔 이 날 레스토랑 예약</h5>
+      ${items.map((it,i)=>`<div class="resvitem">
+        <div><div class="rt">${it.t}</div><div class="rn">${it.n}</div></div>
+        <button class="icsbtn" data-ics-day="${day}" data-ics-idx="${i}">📅 알림</button>
+      </div>`).join('')}
+    </div>`;
+  }
+
+  /* ---------- TOOLS ---------- */
+  let rateEUR=1450, rateCHF=1550; // 기본값, 사용자가 직접 수정 가능
+  const packChecked=new Set();
+
+  function toolsPanel(){
+    return `<div class="guide">
+      <div class="sectitle">💱 환율 계산기</div>
+      <div class="box" style="margin-top:0;">
+        <div style="font-size:12px;color:var(--ink-3);line-height:1.6;margin-bottom:11px;">
+          실시간 환율이 아니라 <b>직접 입력한 값</b>으로 계산돼요. 출국 전 한 번 검색해서 아래 환율만 맞춰두면 돼요.
+          <a href="https://www.google.com/search?q=1+EUR+to+KRW" target="_blank" rel="noopener" style="color:var(--fr);">EUR 환율 검색↗</a> ·
+          <a href="https://www.google.com/search?q=1+CHF+to+KRW" target="_blank" rel="noopener" style="color:var(--ch);">CHF 환율 검색↗</a>
+        </div>
+        <div class="fxrow"><label>1 EUR =</label><input type="number" id="fxRateEUR" value="${rateEUR}"><span>원</span></div>
+        <div class="fxrow"><label>1 CHF =</label><input type="number" id="fxRateCHF" value="${rateCHF}"><span>원</span></div>
+        <div class="fxdivider"></div>
+        <div class="fxrow"><label>🇰🇷 원화</label><input type="number" id="fxKRW" placeholder="0"><span>₩</span></div>
+        <div class="fxrow"><label>🇪🇺 유로</label><input type="number" id="fxEUR" placeholder="0"><span>€</span></div>
+        <div class="fxrow"><label>🇨🇭 프랑</label><input type="number" id="fxCHF" placeholder="0"><span>CHF</span></div>
+        <div class="bnote" style="margin-top:6px;">세 칸 중 아무 곳에나 입력하면 나머지 두 칸이 자동으로 채워져요 — 원화든 유로든 프랑이든 상관없이요.</div>
+      </div>
+
+      <div class="sectitle">🌤️ 도시별 날씨 바로가기</div>
+      <div class="box" style="margin-top:0;">
+        <div class="wxgrid">${WEATHER_CITIES.map(w=>`<a class="wxchip ${w.c}" href="https://www.google.com/search?q=${encodeURIComponent(w.n+' 날씨')}" target="_blank" rel="noopener">${w.n}</a>`).join('')}</div>
+      </div>
+
+      <div class="sectitle">🎒 짐 체크리스트</div>
+      ${PACKING.map(g=>`<div class="box" style="margin-top:8px;">
+        <h4>${g.g}</h4>
+        <div class="packlist">${g.items.map((it,i)=>{
+          const id=g.g+'-'+i; const on=packChecked.has(id);
+          return `<div class="packitem ${on?'done':''}" data-pack="${id}"><span class="pcb">${on?'✓':''}</span><span>${it}</span></div>`;
+        }).join('')}</div>
+      </div>`).join('')}
+    </div>`;
+  }
+
+  function bindTools(){
+    const kEl=document.getElementById('fxKRW'), eEl=document.getElementById('fxEUR'), cEl=document.getElementById('fxCHF');
+    const rEEl=document.getElementById('fxRateEUR'), rCEl=document.getElementById('fxRateCHF');
+    if(!kEl) return;
+    function recalc(source){
+      rateEUR=+rEEl.value||rateEUR; rateCHF=+rCEl.value||rateCHF;
+      if(source==='krw'){
+        const v=+kEl.value;
+        if(v){ eEl.value=(v/rateEUR).toFixed(2); cEl.value=(v/rateCHF).toFixed(2); } else { eEl.value=''; cEl.value=''; }
+      } else if(source==='eur'){
+        const v=+eEl.value;
+        if(v){ kEl.value=Math.round(v*rateEUR); cEl.value=(v*rateEUR/rateCHF).toFixed(2); } else { kEl.value=''; cEl.value=''; }
+      } else if(source==='chf'){
+        const v=+cEl.value;
+        if(v){ kEl.value=Math.round(v*rateCHF); eEl.value=(v*rateCHF/rateEUR).toFixed(2); } else { kEl.value=''; eEl.value=''; }
+      } else {
+        // rate changed — recalc from whichever field currently has a value
+        if(kEl.value) recalc('krw'); else if(eEl.value) recalc('eur'); else if(cEl.value) recalc('chf');
+      }
+    }
+    kEl.addEventListener('input', ()=>recalc('krw'));
+    eEl.addEventListener('input', ()=>recalc('eur'));
+    cEl.addEventListener('input', ()=>recalc('chf'));
+    rEEl.addEventListener('input', ()=>recalc());
+    rCEl.addEventListener('input', ()=>recalc());
+  }
+
+  /* ---------- pieces ---------- */
+  function tips(d){
+    if(!d.tips) return '';
+    return d.tips.map(t=>`<div class="tipbox ${d.country}">
+      <h5>${t.icon} ${t.title}</h5>
+      <ul>${t.lines.map(l=>`<li>${l}</li>`).join('')}</ul></div>`).join('');
+  }
+
+  function timeline(d){
+    if(!d.timeline||!d.timeline.length) return '';
+    let out='', seen=[];
+    d.timeline.forEach(t=>{ if(seen.indexOf(t.period)<0) seen.push(t.period); });
+    seen.forEach(p=>{
+      const items=d.timeline.filter(t=>t.period===p);
+      out+=`<div class="tl-period"><span class="lbl">${PICON[p]||'•'} ${p}</span><span class="ln"></span></div><div class="tl-items">`;
+      items.forEach(t=>{
+        out+=`<div class="ev ${d.country} ${t.key?'key':''} ${t.soft?'soft':''}">
+          <div class="dot">${t.icon||'•'}</div>
+          <div class="ev-card">
+            ${t.time?`<div class="t">${t.time}</div>`:''}
+            <div class="ti">${t.title}</div>
+            ${t.desc?`<div class="de">${t.desc}</div>`:''}
+            ${t.sub?`<ul class="subs">${t.sub.map(s=>`<li>${s}</li>`).join('')}</ul>`:''}
+            ${t.link?`<a class="evlink" href="${t.link.u}" target="_blank" rel="noopener">🔗 ${t.link.label}</a>`:''}
+          </div></div>`;
+      });
+      out+=`</div>`;
+    });
+    return `<div class="tl">${out}</div>`;
+  }
+
+  function guides(d){
+    if(!d.guides) return '';
+    return d.guides.map(g=>`<div class="guidebox">
+      <h4>🧭 ${g.title}${g.badge?`<span class="gbadge">${g.badge}</span>`:''}</h4>
+      ${g.steps.map(s=>`<div class="gstep ${d.country}">
+        <div class="gl">${s.label}</div>
+        <ul>${s.lines.map(l=>`<li>${l}</li>`).join('')}</ul>
+        ${s.link?`<a class="glink" href="${s.link.u}" target="_blank" rel="noopener">🔗 ${s.link.label}</a>`:''}
+      </div>`).join('')}
+    </div>`).join('');
+  }
+
+  function plans(d){
+    if(!d.plans) return '';
+    return `<div class="plans">`+d.plans.map(p=>`
+      <div class="plan"><h4>${p.label}</h4>
+        ${p.note?`<div class="pnote">${p.note}</div>`:''}
+        <ul>${p.items.map(i=>`<li>${i.time?`<span class="pt">${i.time}</span>`:''}${i.t}${i.link?`<a class="plink" href="${i.link}" target="_blank" rel="noopener">🔗 예약</a>`:''}</li>`).join('')}</ul>
+      </div>`).join('')+`</div>`;
+  }
+
+  function table(t){
+    return `<div class="box"><h4>${t.title}</h4>
+      ${t.note?`<div style="font-size:11.5px;color:var(--ink-3);margin:-4px 0 9px;line-height:1.5;">${t.note}</div>`:''}
+      <div class="tablescroll"><table class="wtable">
+        ${t.head?`<thead><tr>${t.head.map(h=>`<th>${h}</th>`).join('')}</tr></thead>`:''}
+        <tbody>${t.rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody>
+      </table></div>
+      ${t.links?`<div class="cardlinks">${t.links.map(l=>`<a href="${l.u}" target="_blank" rel="noopener">🔗 ${l.label}</a>`).join('')}</div>`:''}
+    </div>`;
+  }
+
+  function extras(d){
+    let o='';
+    if(d.prep) o+=`<div class="box"><h4>🎒 준비물</h4><ul>${d.prep.map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
+    if(d.table) o+=table(d.table);
+    if(d.nightBox) o+=`<div class="box"><h4>${d.nightBox.icon} ${d.nightBox.title}</h4><ul>${d.nightBox.lines.map(l=>`<li>${l}</li>`).join('')}</ul></div>`;
+    if(d.souvenirGroups){
+      o+=`<div class="box"><h4>🎁 기념품 · 쇼핑 리스트</h4>`
+       + d.souvenirGroups.map(g=>`<div class="svgroup"><div class="svg-t">${g.g}</div><ul>${g.items.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')
+       + (d.souvenirNote?`<div class="bnote">📍 ${d.souvenirNote}</div>`:'')+`</div>`;
+    }
+    return o;
+  }
+
+  function pickEl(p){
+    const href=linkOf(p);
+    const inner=`<span class="pi">🍽</span><div class="pbody"><div class="pn">${p.n}</div>${p.d?`<div class="pd">${p.d}</div>`:''}${p.sub?`<ul class="subs" style="margin-top:5px;">${p.sub.map(s=>`<li>${s}</li>`).join('')}</ul>`:''}</div>`;
+    return href?`<a class="pick" href="${href}" target="_blank" rel="noopener">${inner}<span class="pgo">↗</span></a>`
+               :`<div class="pick">${inner}</div>`;
+  }
+
+  function meals(d){
+    if(!d.meals||!d.meals.length) return '';
+    return `<div class="meals"><div class="sectitle">식사 · 카페 <span class="hint">탭하면 구글맵</span></div>`
+      +d.meals.map(m=>`<div class="meal-slot"><div class="sl">${m.slot}</div>
+        ${m.note?`<div style="font-size:11.5px;color:var(--ink-3);margin:-3px 0 7px;">${m.note}</div>`:''}
+        <div class="picks">${m.picks.map(pickEl).join('')}</div></div>`).join('')
+      +(d.refList?`<div class="reflist"><h5>📌 ${d.refList.title}</h5><ul>${d.refList.items.map(i=>`<li>${i}</li>`).join('')}</ul></div>`:'')
+      +`</div>`;
+  }
+
+  function dayPanel(){
+    const d=dayOf(cur);
+    return `<div class="day">
+      <div class="dayhead ${d.country}">
+        <div class="top"><span class="dn">DAY ${String(d.n).padStart(2,'0')}</span>
+        <span class="dt">${d.date} (${d.dow}) · ${CN[d.country]} ${d.city}</span></div>
+        <h2>${d.title}</h2>
+        <div class="hl">${d.headline}</div>
+        ${d.tags?`<div class="tagrow">${d.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>`:''}
+        <div class="stay">🏨 ${d.stay}</div>
+      </div>
+      ${d.warn?`<div class="warnbox"><b>⚠️ 주의</b> · ${d.warn}</div>`:''}
+      ${resvBlock(d.n)}
+      ${tips(d)}
+      ${guides(d)}
+      ${timeline(d)}
+      ${plans(d)}
+      ${extras(d)}
+      ${meals(d)}
+      <div class="daynav">
+        <button data-nav="-1" ${cur===1?'disabled':''}>← Day ${cur-1||''}</button>
+        <button data-nav="1" ${cur===18?'disabled':''}>Day ${cur+1>18?'':cur+1} →</button>
+      </div></div>`;
+  }
+
+  /* ---------- overview ---------- */
+  function overviewPanel(){
+    const F={fr:'🇫🇷',ch:'🇨🇭',it:'🇮🇹'};
+    return `<div class="guide">
+      <div class="sectitle">한 장 요약 · Day 1—18</div>
+      <div class="box" style="margin-top:0;padding:12px 10px;">
+        <div class="tablescroll"><table class="ovtable">
+          <thead><tr><th>Day</th><th>날짜</th><th>도시(숙소)</th><th>일정 요약</th><th>체크 포인트</th></tr></thead>
+          <tbody>${OVERVIEW.map(r=>`<tr data-goto="${r[0]}">
+            <td class="ovd ${r[2]}">${r[0]}</td>
+            <td style="white-space:nowrap;">${r[1]}</td>
+            <td><span class="ovcity">${F[r[2]]} ${r[3].split(' (')[0]}</span><br><span class="sm" style="color:var(--ink-3);font-size:11px;">${r[3].includes('(')?r[3].split(' (')[1].replace(')',''):''}</span></td>
+            <td>${r[4]}</td><td class="sm">${r[5]}</td></tr>`).join('')}</tbody>
+        </table></div>
+      </div>
+
+      <div class="sectitle">항공편</div>
+      <div class="infogrid">${TRIP.flights.map(f=>`<div class="icard"><div class="il">${f.label}</div><ul>${f.lines.map(l=>`<li>${l}</li>`).join('')}</ul></div>`).join('')}</div>
+
+      <div class="sectitle">숙소</div>
+      <div class="infogrid">${TRIP.stays.map(s=>`<div class="icard" style="border-left:3px solid var(--${s.c});"><div class="il">${s.t}</div><ul>${s.lines.map(l=>`<li>${l}</li>`).join('')}</ul></div>`).join('')}</div>
+
+      <div class="sectitle">유용한 정보</div>
+      <div class="box" style="margin-top:0;"><ul>${TRIP.apps.map(a=>`<li>${a}</li>`).join('')}</ul></div>
+
+      <div class="sectitle">레스토랑 예약 캘린더</div>
+      <div class="box" style="margin-top:0;">
+        <div style="font-size:12.5px;color:var(--ink-2);line-height:1.6;">투어·티켓류는 이미 다 예약해두셨죠 — 여기엔 <b>레스토랑 예약 ${RESERVATIONS.length}곳</b>만 모아뒀어요. 각 항목은 실제 방문일 <b>하루 전</b>에 알림이 울려요.</div>
+        <button class="icsbtn all" id="icsAllBtn">📅 레스토랑 예약 알림 전체 캘린더에 담기</button>
+      </div>
+      ${emergBox()}
+    </div>`;
+  }
+
+  /* ---------- eat ---------- */
+  function eatPanel(){
+    const g=PLACES[eatC];
+    const tabs=Object.keys(PLACES).map(k=>`<div class="chip ${k} ${k===eatC?'on':''}" data-ec="${k}" style="min-width:auto;padding:8px 14px;"><div class="cn" style="font-size:13px;font-family:var(--sans);">${COUNTRIES[k].flag} ${COUNTRIES[k].short}</div></div>`).join('');
+    const total=g.reduce((a,x)=>a+x.items.length,0);
+    return `<div class="guide">
+      <div class="rail" style="padding:0 0 13px;">${tabs}</div>
+      <div class="eatbar ${eatC}">
+        <div class="eb-l"><div class="eb-t">${COUNTRIES[eatC].flag} ${COUNTRIES[eatC].short} · ${total}곳</div>
+        <div class="eb-s">이름 탭하면 구글맵 · <b>D숫자</b>는 일정 배치된 날</div></div>
+        <a class="eb-link" href="${MAPLIST[eatC]}" target="_blank" rel="noopener">내 지도 ↗</a>
+      </div>
+      ${g.map(grp=>`<div class="eatgroup">
+        <div class="eathead ${eatC}">${grp.city}<span class="cnt">${grp.items.length}</span></div>
+        <div class="picks">${grp.items.map(p=>{
+          const m=p.d&&p.d.match(ICONRE), icon=m?m[0]:'🍽';
+          const desc=p.d?p.d.replace(ICONRE,'').trim():'';
+          return `<a class="pick" href="${linkOf(p)}" target="_blank" rel="noopener">
+            <span class="pi">${icon}</span>
+            <div class="pbody"><div class="pn">${p.n}${p.day?`<span class="dbadge ${eatC}">D${p.day}</span>`:''}</div>${desc?`<div class="pd">${desc}</div>`:''}</div>
+            <span class="pgo">↗</span></a>`;}).join('')}</div>
+      </div>`).join('')}</div>`;
+  }
+
+  /* ---------- geolocation nearby (fixed: open window synchronously to avoid popup block) ---------- */
+  function findNearby(term){
+    const w=window.open('about:blank','_blank');
+    const fallback=()=>{ if(w) w.location.href='https://www.google.com/maps/search/'+encodeURIComponent(term); };
+    if(!navigator.geolocation){ fallback(); return; }
+    navigator.geolocation.getCurrentPosition(
+      pos=>{
+        const {latitude,longitude}=pos.coords;
+        if(w) w.location.href=`https://www.google.com/maps/search/${encodeURIComponent(term)}/@${latitude},${longitude},16z`;
+      },
+      ()=>{ fallback(); alert('위치 권한이 없어서 정확한 근처 검색은 못했어요 — 일반 검색으로 열었어요. 브라우저 설정에서 위치 권한을 허용하면 더 정확해져요.'); }
+    );
+  }
+
+  function parkingCard(){
+    return `<div class="box" style="margin-top:11px;">
+      <h4>🅿️ 주차장 (ZTL 제외)</h4>
+      <button class="icsbtn all" data-near="parcheggio" style="background:var(--it);">📍 내 위치 근처 주차장 구글맵에서 찾기</button>
+      <div class="bnote" style="margin-top:8px;">지금 계신 곳 기준으로 구글맵에서 'parcheggio'(주차장)를 검색해 새 탭으로 열어드려요.</div>
+      <div class="svgroup" style="margin-top:13px;"><div class="svg-t">저장된 주차장 목록</div>
+        <div class="picks">${PARKING.map(p=>`<a class="pick" href="${gmap(p.q)}" target="_blank" rel="noopener">
+          <span class="pi">🅿️</span>
+          <div class="pbody"><div class="pn">${p.name}<span class="dbadge it">${p.area}</span>${p.day?`<span class="dbadge it">D${p.day}</span>`:''}</div><div class="pd">${p.note}</div></div>
+          <span class="pgo">↗</span></a>`).join('')}</div>
+      </div>
+    </div>`;
+  }
+
+  function nearbyCard(country){
+    const t=NEARBY_TERMS[country]; if(!t) return '';
+    return `<div class="box" style="margin-top:11px;">
+      <h4>🧭 내 주변 찾기</h4>
+      <div class="nearbtns">
+        <button class="nearbtn" data-near="${t.toilet}">🚻 화장실</button>
+        <button class="nearbtn" data-near="${t.pharmacy}">💊 약국</button>
+        <button class="nearbtn" data-near="${t.atm}">💰 ATM</button>
+      </div>
+      <div class="bnote" style="margin-top:9px;">지금 위치 기준으로 구글맵에서 검색해서 새 탭으로 열어드려요.</div>
+    </div>`;
+  }
+
+  /* ---------- guide ---------- */
+  function guidePanel(){
+    const c=COUNTRIES[guideC];
+    const tabs=Object.keys(COUNTRIES).map(k=>`<div class="chip ${k} ${k===guideC?'on':''}" data-gc="${k}" style="min-width:auto;padding:8px 14px;"><div class="cn" style="font-size:13px;font-family:var(--sans);">${COUNTRIES[k].flag} ${COUNTRIES[k].short}</div></div>`).join('');
+    const cards=c.cards.map(cd=>{
+      let inner='';
+      if(cd.rows) inner+=`<div class="tablescroll"><table class="wtable"><tbody>${cd.rows.map(r=>`<tr>${r.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+      if(cd.list) inner+=`<ul>${cd.list.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+      if(cd.links) inner+=`<div class="cardlinks">${cd.links.map(l=>`<a href="${l.u}" target="_blank" rel="noopener">🔗 ${l.label}</a>`).join('')}</div>`;
+      return `<div class="box" style="margin-top:11px;"><h4>${cd.icon} ${cd.title}</h4>${inner}${cd.note?`<div class="bnote">${cd.note}</div>`:''}</div>`;
+    }).join('');
+    const tbls=(c.tables||[]).map(table).join('');
+    const orient=c.orient?`<div class="sectitle" style="margin-top:16px;">가기 전에 알아두면 편한 것</div>
+      <div class="orientgrid">${c.orient.map(o=>`<div class="orientcard">${o}</div>`).join('')}</div>`:'';
+    const mapLinkQ={fr:"Paris, France", ch:"Grindelwald, Switzerland", it:"Amalfi Coast, Italy"}[guideC];
+    const mapLink=`<a class="icsbtn all" style="display:block;text-align:center;text-decoration:none;background:var(--${guideC});" href="${gmap(mapLinkQ)}" target="_blank" rel="noopener">🗺️ ${c.name} 지도에서 크게 보기</a>`;
+    return `<div class="guide">
+      <div class="rail" style="padding:0 0 13px;">${tabs}</div>
+      <div class="cbanner ${guideC}"><h3>${c.flag} ${c.name}</h3><div class="ci">${c.intro}</div><div class="cm">${c.nights} · ${c.dates}</div></div>
+      ${mapLink}
+      ${orient}
+      ${cards}${tbls}
+      ${guideC==='it'?parkingCard():nearbyCard(guideC)}
+      ${guideC==='it'?nearbyCard(guideC):''}
+      </div>`;
+  }
+
+  function render(){
+    let h=hero()+modes();
+    if(mode==='day') h+=rail();
+    h+=`<div class="panel on">`;
+    if(mode==='map') h+=mapPanel();
+    else if(mode==='day') h+=dayPanel();
+    else if(mode==='overview') h+=overviewPanel();
+    else if(mode==='eat') h+=eatPanel();
+    else if(mode==='tools') h+=toolsPanel();
+    else h+=guidePanel();
+    h+=`</div><div class="foot">Bon voyage · Buon viaggio · Gute Reise ✈<br>즐거운 신혼여행 되세요 💕</div>`;
+    root.innerHTML=h; bind(); if(mode==='day') scrollRail(); if(mode==='tools') bindTools();
+  }
+  function scrollRail(){const r=document.getElementById('rail'),a=r&&r.querySelector('.chip.on'); if(r&&a) r.scrollLeft=a.offsetLeft-r.clientWidth/2+a.clientWidth/2;}
+  function bind(){
+    document.querySelectorAll('[data-mode]').forEach(e=>e.onclick=()=>{mode=e.dataset.mode;render();window.scrollTo({top:0,behavior:'smooth'});});
+    document.querySelectorAll('[data-goto]').forEach(e=>e.onclick=()=>{cur=+e.dataset.goto;mode='day';render();window.scrollTo({top:0,behavior:'smooth'});});
+    document.querySelectorAll('[data-nav]').forEach(e=>e.onclick=()=>{cur=Math.min(18,Math.max(1,cur+(+e.dataset.nav)));render();window.scrollTo({top:0,behavior:'smooth'});});
+    document.querySelectorAll('[data-gc]').forEach(e=>e.onclick=()=>{guideC=e.dataset.gc;render();});
+    document.querySelectorAll('[data-ec]').forEach(e=>e.onclick=()=>{eatC=e.dataset.ec;render();window.scrollTo({top:0,behavior:'smooth'});});
+    document.querySelectorAll('[data-goto-guide]').forEach(e=>e.onclick=()=>{guideC=e.dataset.gotoGuide;mode='guide';render();window.scrollTo({top:0,behavior:'smooth'});});
+    document.querySelectorAll('[data-ics-day]').forEach(e=>e.onclick=()=>{
+      const day=+e.dataset.icsDay, idx=+e.dataset.icsIdx;
+      const item=RESERVATIONS.filter(r=>r.day===day)[idx];
+      if(item) downloadICS(`day${day}-예약알림.ics`, [item]);
+    });
+    const allBtn=document.getElementById('icsAllBtn');
+    if(allBtn) allBtn.onclick=()=>downloadICS('신혼여행-예약알림-전체.ics', RESERVATIONS);
+    document.querySelectorAll('[data-near]').forEach(e=>e.onclick=()=>findNearby(e.dataset.near));
+    document.querySelectorAll('[data-pack]').forEach(e=>e.onclick=()=>{
+      const id=e.dataset.pack;
+      packChecked.has(id)?packChecked.delete(id):packChecked.add(id);
+      render();
+    });
+    const parkBtn=document.getElementById('findParkingBtn');
+    if(parkBtn) parkBtn.onclick=findNearbyParking;
+  }
+  render();
+})();
+
+</script>
 </body>
 </html>
